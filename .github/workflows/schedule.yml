@@ -1,0 +1,53 @@
+name: USCIS Civics Test Monitor
+
+on:
+  # Run every Monday at 9:00 AM Eastern time (14:00 UTC)
+  schedule:
+    - cron: '0 14 * * 1'
+
+  # Also lets you run it manually from GitHub website anytime
+  workflow_dispatch:
+
+jobs:
+  check-uscis:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1 — Check out your repo so the script can run
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2 — Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Step 3 — Install required Python packages
+      - name: Install dependencies
+        run: |
+          pip install requests pypdf
+
+      # Step 4 — Restore previous snapshot (so we remember last check)
+      - name: Restore snapshot cache
+        uses: actions/cache@v4
+        with:
+          path: last_snapshot.json
+          key: uscis-snapshot-${{ runner.os }}
+          restore-keys: |
+            uscis-snapshot-
+
+      # Step 5 — Run the monitor script
+      - name: Run USCIS monitor
+        env:
+          GMAIL_USER:     ${{ secrets.GMAIL_USER }}
+          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+          NOTIFY_EMAIL:   ${{ secrets.NOTIFY_EMAIL }}
+        run: python monitor.py
+
+      # Step 6 — Save updated snapshot for next week
+      - name: Save snapshot cache
+        uses: actions/cache@v4
+        with:
+          path: last_snapshot.json
+          key: uscis-snapshot-${{ runner.os }}
