@@ -366,10 +366,28 @@ def fetch_governors() -> list[dict[str, Any]]:
         if code in governors
     ]
     rows.sort(key=lambda r: r["state"])
-    print(f"Governors parsed: {len(rows)}")
     if len(rows) < 50:
-        print("WARNING: fewer than 50 governors parsed from Wikipedia")
-    return rows
+        nav = re.findall(
+            r"\b([A-Z]{2})\s*[▌|]\s*([A-Za-z .'\-]+)\s*\(([RDI])",
+            html,
+        )
+        extra = {
+            code: name.strip()
+            for code, name, _party in nav
+            if code in {c for c in STATE_NAMES.values()}
+            and _looks_like_person_name(name.strip())
+        }
+        extra.pop("DC", None)
+        for code, name in extra.items():
+            if code not in governors:
+                governors[code] = name
+        rows = [
+            {"state": code, "name": governors[code], "state_name": name}
+            for name, code in STATE_NAMES.items()
+            if code in governors
+        ]
+        rows.sort(key=lambda r: r["state"])
+        print(f"Governors after navbox fallback: {len(rows)}")
 
 
 def canonicalize(obj: Any) -> Any:
