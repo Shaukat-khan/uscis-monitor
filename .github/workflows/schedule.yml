@@ -1,53 +1,38 @@
-name: USCIS Civics Test Monitor
+name: US Citizenship Ready data monitor
 
 on:
-  # Run every Monday at 9:00 AM Eastern time (14:00 UTC)
   schedule:
-    - cron: '0 14 * * 1'
-
-  # Also lets you run it manually from GitHub website anytime
+    - cron: "0 14 * * 1"
   workflow_dispatch:
+    inputs:
+      simulate_change:
+        description: "Mutate Ohio governor after fetch to test email/diff (does not commit fake data)"
+        required: false
+        default: "false"
+        type: boolean
+
+permissions:
+  contents: write
 
 jobs:
-  check-uscis:
+  update-civics-data:
     runs-on: ubuntu-latest
-
     steps:
-      # Step 1 — Check out your repo so the script can run
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # Step 2 — Set up Python
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-
-      # Step 3 — Install required Python packages
-      - name: Install dependencies
-        run: |
-          pip install requests pypdf
-
-      # Step 4 — Restore previous snapshot (so we remember last check)
-      - name: Restore snapshot cache
-        uses: actions/cache@v4
-        with:
-          path: last_snapshot.json
-          key: uscis-snapshot-${{ runner.os }}
-          restore-keys: |
-            uscis-snapshot-
-
-      # Step 5 — Run the monitor script
-      - name: Run USCIS monitor
+          python-version: "3.11"
+      - run: pip install requests pypdf
+      - name: Build civics_data.json and notify on changes
         env:
-          GMAIL_USER:     ${{ secrets.GMAIL_USER }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
-          NOTIFY_EMAIL:   ${{ secrets.NOTIFY_EMAIL }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          SIMULATE_CHANGE: ${{ github.event.inputs.simulate_change == 'true' && '1' || '' }}
         run: python monitor.py
-
-      # Step 6 — Save updated snapshot for next week
-      - name: Save snapshot cache
-        uses: actions/cache@v4
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          path: last_snapshot.json
-          key: uscis-snapshot-${{ runner.os }}
+          commit_message: "Update civics_data.json snapshot"
+          file_pattern: civics_data.json
+          commit_user_name: uscis-monitor-bot
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
