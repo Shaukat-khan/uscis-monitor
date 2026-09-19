@@ -192,6 +192,11 @@ def _looks_like_person_name(text: str) -> bool:
             "democrat",
             "party",
             "birth name",
+            "governor of",
+            "list of",
+            "mayor of",
+            "seal of",
+            "flag of",
         )
     ):
         return False
@@ -317,48 +322,70 @@ def fetch_congress() -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     return senators, reps
 
 
-def fetch_governors() -> list[dict[str, Any]]:
-    api = "https://en.wikipedia.org/w/api.php"
-    print(f"GET {api} (governors wikitext/html)")
-    resp = requests.get(
-        api,
-        params={
-            "action": "parse",
-            "page": "List_of_current_United_States_governors",
-            "prop": "text",
-            "format": "json",
-            "redirects": 1,
-        },
-        headers={"User-Agent": UA},
-        timeout=45,
+SORTNAME_RE = re.compile(
+    r"\{\{\s*sortname\s*\|([^}|]+)\|([^}|]+)(?:\|([^}]+))?\}\}",
+    re.I,
+)
+GOVERNOR_OF_LINK_RE = re.compile(
+    r"\[\[Governor of ([^|\]]+)\|([^\]]+)\]\]",
+    re.I,
+)
+WIKI_LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]")
+
+
+def _sortname_display(first: str, last: str, extra: str | None) -> str:
+    first, last = first.strip(), last.strip()
+    extra = (extra or "").strip()
+    extra_low = extra.lower()
+    if extra and not extra_low.startswith("dab=") and extra_low not in (
+        "nolink",
+        "nolink=1",
+    ):
+        if _looks_like_person_name(extra):
+            return extra
+    return f"{first} {last}".strip()
+
+
+def parse_governors_wikitext(wikitext: str) -> list[dict[str, Any]]:
+    """Read person names from the state-governors table, not office page titles."""
+    section = re.search(
+        r"==\s*State governors\s*==(.*?)==\s*Territory governors\s*==",
+        wikitext,
+        flags=re.S | re.I,
     )
-    resp.raise_for_status()
-    html = resp.json()["parse"]["text"]["*"]
-    party_titles = {
-        "republican party",
-        "democratic party",
-        "democratic-farmer-labor party",
-        "independent",
-        "forward party",
-    }
+    body = section.group(1) if section else wikitext
+    table = re.search(r"\{\|(.*?)\|\}", body, flags=re.S)
+    if not table:
+        return []
     governors: dict[str, str] = {}
-    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", html, flags=re.I | re.S):
-        titles = re.findall(r'<a[^>]+title="([^"]+)"', row)
+    for raw_row in re.split(r"\n\|-", table.group(1)):
         state_code = None
-        for title in titles:
-            base = title.split(" (")[0].strip()
-            if base in STATE_NAMES and state_code is None:
-                state_code = STATE_NAMES[base]
-                continue
-            if state_code is None:
-                continue
-            if title.startswith("List of") or title.startswith("File:"):
-                continue
-            if base.lower() in party_titles or "party" in base.lower():
-                continue
-            if _looks_like_person_name(base):
-                governors[state_code] = base
+        for _office, label in GOVERNOR_OF_LINK_RE.findall(raw_row):
+            label = label.strip()
+            if label in STATE_NAMES:
+                state_code = STATE_NAMES[label]
                 break
+        if not state_code:
+            continue
+        name = ""
+        sort_match = SORTNAME_RE.search(raw_row)
+        if sort_match:
+            name = _sortname_display(*sort_match.groups())
+        if not _looks_like_person_name(name):
+            for target, display in WIKI_LINK_RE.findall(raw_row):
+                target = target.strip()
+                if target.lower().startswith(
+                    ("file:", "governor of", "list of", "category:")
+                ):
+                    continue
+                candidate = (display or target).strip()
+                if candidate in STATE_NAMES:
+                    continue
+                if _looks_like_person_name(candidate):
+                    name = candidate
+                    break
+        if _looks_like_person_name(name):
+            governors[state_code] = name
 
     rows = [
         {"state": code, "name": governors[code], "state_name": name}
@@ -366,28 +393,34 @@ def fetch_governors() -> list[dict[str, Any]]:
         if code in governors
     ]
     rows.sort(key=lambda r: r["state"])
-    if len(rows) < 50:
-        nav = re.findall(
-            r"\b([A-Z]{2})\s*[▌|]\s*([A-Za-z .'\-]+)\s*\(([RDI])",
-            html,
+    return rows
+
+
+def fetch_governors() -> list[dict[str, Any]]:
+    api = "https://en.wikipedia.org/w/api.php"
+    print(f"GET {api} (governors wikitext)")
+    resp = requests.get(
+        api,
+        params={
+            "action": "parse",
+            "page": "List_of_current_United_States_governors",
+            "prop": "wikitext",
+            "format": "json",
+            "redirects": 1,
+        },
+        headers={"User-Agent": UA},
+        timeout=45,
+    )
+    resp.raise_for_status()
+    wikitext = resp.json()["parse"]["wikitext"]["*"]
+    rows = parse_governors_wikitext(wikitext)
+    missing = [code for code in STATE_NAMES.values() if code not in {r["state"] for r in rows}]
+    print(f"Governors: {len(rows)}")
+    if missing:
+        raise RuntimeError(
+            f"Governor scrape returned {len(rows)} states, missing {missing}"
         )
-        extra = {
-            code: name.strip()
-            for code, name, _party in nav
-            if code in {c for c in STATE_NAMES.values()}
-            and _looks_like_person_name(name.strip())
-        }
-        extra.pop("DC", None)
-        for code, name in extra.items():
-            if code not in governors:
-                governors[code] = name
-        rows = [
-            {"state": code, "name": governors[code], "state_name": name}
-            for name, code in STATE_NAMES.items()
-            if code in governors
-        ]
-        rows.sort(key=lambda r: r["state"])
-        print(f"Governors after navbox fallback: {len(rows)}")
+    return rows
 
 
 def canonicalize(obj: Any) -> Any:
@@ -542,7 +575,7 @@ def build_dataset() -> dict[str, Any]:
     questions = apply_current_officials(questions, executive)
     senators, representatives = fetch_congress()
     governors = fetch_governors()
-    _assert_clean(questions, executive)
+    _assert_clean(questions, executive, governors)
     return {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources": {
@@ -563,7 +596,11 @@ def build_dataset() -> dict[str, Any]:
     }
 
 
-def _assert_clean(questions: dict[str, Any], executive: dict[str, Any]) -> None:
+def _assert_clean(
+    questions: dict[str, Any],
+    executive: dict[str, Any],
+    governors: list[dict[str, Any]] | None = None,
+) -> None:
     missing = [str(i) for i in range(1, 129) if str(i) not in questions]
     empty = [
         k
@@ -591,6 +628,22 @@ def _assert_clean(questions: dict[str, Any], executive: dict[str, Any]) -> None:
         print(f"Validation executive.{field}={value!r}")
         if not isinstance(value, str) or not value or "," in value:
             print(f"WARNING: executive.{field} should be a single name")
+    if governors is not None:
+        codes = [row.get("state") for row in governors]
+        names = [row.get("name") or "" for row in governors]
+        missing = [code for code in STATE_NAMES.values() if code not in codes]
+        junk = [
+            f"{row.get('state')}:{row.get('name')}"
+            for row in governors
+            if not _looks_like_person_name(str(row.get("name") or ""))
+        ]
+        print(f"Validation governors={len(governors)} missing={missing or 'none'}")
+        if missing or junk or len(governors) != 50:
+            raise RuntimeError(
+                f"Governors invalid: count={len(governors)} missing={missing} junk={junk}"
+            )
+        if len(set(codes)) != 50 or len(set(names)) != 50:
+            raise RuntimeError("Governors look duplicated or incomplete")
 
 
 def maybe_simulate(data: dict[str, Any]) -> dict[str, Any]:
