@@ -88,23 +88,75 @@ def save_json(path: str, data: dict[str, Any]) -> None:
     print(f"Wrote {path}")
 
 
+FOOTER_RE = re.compile(
+    r"^(?:\d+\s+of\s+\d+|uscis\.gov(?:/citizenship)?/?|www\.uscis\.gov.*|"
+    r"m-1778.*|128 civics questions.*)$",
+    re.I,
+)
+VISIT_UPDATES_RE = re.compile(
+    r"visit\s+uscis\.gov/citizenship/testupdates",
+    re.I,
+)
+PAGE_NUM_QUESTION_RE = re.compile(r"^\d+\s+of\s+\d+$", re.I)
+
+# PDF answers that only point at testupdates — fill from executive names.
+CURRENT_OFFICIAL_QUESTIONS = {
+    30: "speaker_of_the_house",
+    38: "president",
+    39: "vice_president",
+    57: "chief_justice",
+}
+
+
+def _is_noise_line(line: str) -> bool:
+    stripped = line.strip()
+    if not stripped:
+        return True
+    if FOOTER_RE.match(stripped):
+        return True
+    if PAGE_NUM_QUESTION_RE.match(stripped):
+        return True
+    if stripped.lower() in {"*", "•"}:
+        return True
+    return False
+
+
+def _clean_pdf_text(raw_text: str) -> str:
+    kept = []
+    for line in raw_text.splitlines():
+        if _is_noise_line(line):
+            continue
+        kept.append(line)
+    return "\n".join(kept)
+
+
 def parse_questions(raw_text: str) -> dict[str, Any]:
+    """Split on real numbered questions (digit + period + capital), not page numbers."""
+    cleaned = _clean_pdf_text(raw_text)
+    pattern = re.compile(
+        r"^(\d{1,3})\.\s+(?=[A-Z\"'])(.+?)(?=^\d{1,3}\.\s+(?=[A-Z\"'])|\Z)",
+        re.MULTILINE | re.DOTALL,
+    )
     questions: dict[str, Any] = {}
-    pattern = re.compile(r"\n(\d{1,3})\.\s+(.+?)(?=\n\d{1,3}\.\s|\Z)", re.DOTALL)
-    matches = pattern.findall("\n" + raw_text)
-    for num, body in matches:
+    for num, body in pattern.findall(cleaned):
+        n = int(num)
+        if n < 1 or n > 128:
+            continue
         lines = [ln.strip() for ln in body.strip().splitlines() if ln.strip()]
         if not lines:
             continue
-        question_text = lines[0]
+        question_text = re.sub(r"\s+", " ", lines[0]).strip()
         senior = "*" in question_text or "★" in question_text
-        answers = []
+        answers: list[str] = []
         for line in lines[1:]:
+            if _is_noise_line(line) or VISIT_UPDATES_RE.search(line):
+                continue
             clean = line.lstrip("•●▪*-– ").strip()
-            if clean and not clean.lower().startswith("visit uscis"):
-                answers.append(clean)
-        questions[num] = {
-            "number": int(num),
+            if not clean:
+                continue
+            answers.append(clean)
+        questions[str(n)] = {
+            "number": n,
             "question": question_text,
             "answers": answers,
             "senior": senior,
@@ -125,55 +177,105 @@ def fetch_civics_questions() -> tuple[dict[str, Any], list[int], str]:
     return questions, seniors, pdf_sha
 
 
-def _names_after(html: str, heading: str) -> list[str]:
-    idx = html.lower().find(heading.lower())
-    if idx < 0:
-        return []
-    chunk = html[idx : idx + 1800]
-    # USCIS lists acceptable names as <li> items under each question.
-    items = re.findall(r"<li[^>]*>(.*?)</li>", chunk, flags=re.I | re.S)
+def _looks_like_person_name(text: str) -> bool:
+    t = text.strip()
+    if not t or len(t) > 80:
+        return False
+    low = t.lower()
+    if any(
+        junk in low
+        for junk in (
+            "answers will vary",
+            "visit ",
+            "nine",
+            "republican",
+            "democrat",
+            "party",
+            "birth name",
+        )
+    ):
+        return False
+    if re.search(r"\d", t):
+        return False
+    # Require at least a first + last, not a last-name-only USCIS shortcut.
+    parts = [p for p in re.split(r"\s+", t) if p]
+    return len(parts) >= 2
+
+
+def _best_person_name(candidates: list[str]) -> str:
+    people = [c.strip() for c in candidates if _looks_like_person_name(c)]
+    if not people:
+        return ""
+    # Prefer the most complete form ("Donald J. Trump" over "Donald Trump").
+    return max(people, key=lambda n: (len(n), n))
+
+
+def _names_for_heading(html: str, heading_regex: str) -> str:
+    """Take names from the list under one 2025-test heading, not the next question."""
+    pattern = re.compile(
+        heading_regex + r".*?(?:<ul[^>]*>(.*?)</ul>|(?:<li[^>]*>.*?</li>\s*)+)",
+        re.I | re.S,
+    )
+    match = pattern.search(html)
+    if not match:
+        return ""
+    block = match.group(0)
+    # Stop before the next numbered civics heading if the regex overran.
+    nxt = re.search(r"(?:<p[^>]*>)?\s*\d{1,3}\.\s+", block[20:], flags=re.I)
+    if nxt:
+        block = block[: 20 + nxt.start()]
+    items = re.findall(r"<li[^>]*>(.*?)</li>", block, flags=re.I | re.S)
     names = []
     for item in items:
         text = re.sub(r"<[^>]+>", " ", item)
-        text = re.sub(r"\s+", " ", text).strip(" .")
-        if not text:
-            continue
-        if "visit " in text.lower() or "answers will vary" in text.lower():
-            break
-        if "question" in text.lower() and text[:3].isdigit():
-            break
-        names.append(text)
-        if len(names) >= 6:
-            break
-    return names
+        text = re.sub(r"\s+", " ", text).strip()
+        if text:
+            names.append(text)
+    return _best_person_name(names)
 
 
 def fetch_executive() -> dict[str, Any]:
     html = http_get(TESTUPDATES_URL).text
-    # Prefer the 2025-test section when both 2008 and 2025 appear.
-    section = html
     marker = "2025 Naturalization Civics Test"
     pos = html.find(marker)
-    if pos >= 0:
-        section = html[pos:]
+    section = html[pos:] if pos >= 0 else html
+    # Do not search for "President of the United States now" — that substring
+    # also matches "Vice President of the United States now".
     executive = {
-        "president": _names_after(section, "President of the United States now"),
-        "vice_president": _names_after(
-            section, "Vice President of the United States now"
+        "president": _names_for_heading(
+            section,
+            r"What is the name of the President of the United States now",
         ),
-        "speaker_of_the_house": _names_after(
-            section, "Speaker of the House of Representatives now"
+        "vice_president": _names_for_heading(
+            section,
+            r"What is the name of the Vice President of the United States now",
         ),
-        "chief_justice": _names_after(
-            section, "Chief Justice of the United States now"
+        "speaker_of_the_house": _names_for_heading(
+            section,
+            r"What is the name of the Speaker of the House of Representatives now",
+        ),
+        "chief_justice": _names_for_heading(
+            section,
+            r"Who is the Chief Justice of the United States now",
         ),
         "source": TESTUPDATES_URL,
     }
-    print(
-        "Executive:",
-        {k: v for k, v in executive.items() if k != "source"},
-    )
+    print("Executive:", {k: v for k, v in executive.items() if k != "source"})
     return executive
+
+
+def apply_current_officials(
+    questions: dict[str, Any], executive: dict[str, Any]
+) -> dict[str, Any]:
+    for number, field in CURRENT_OFFICIAL_QUESTIONS.items():
+        name = (executive.get(field) or "").strip()
+        if not name:
+            continue
+        key = str(number)
+        if key not in questions:
+            continue
+        questions[key]["answers"] = [name]
+    return questions
 
 
 def _official_name(entry: dict[str, Any]) -> str:
@@ -216,34 +318,47 @@ def fetch_congress() -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
 
 
 def fetch_governors() -> list[dict[str, Any]]:
-    html = http_get(GOVERNORS_WIKI_URL).text
-    # Rows look like: <td>Alabama</td> ... <td>Kay Ivey</td>
-    governors: dict[str, str] = {}
-    row_re = re.compile(
-        r"<tr[^>]*>\s*<td[^>]*>.*?title=\"([^\"]+)\".*?</td>\s*"
-        r"<td[^>]*>.*?</td>\s*"
-        r"<td[^>]*>.*?title=\"([^\"]+)\".*?</td>",
-        re.I | re.S,
+    api = "https://en.wikipedia.org/w/api.php"
+    print(f"GET {api} (governors wikitext/html)")
+    resp = requests.get(
+        api,
+        params={
+            "action": "parse",
+            "page": "List_of_current_United_States_governors",
+            "prop": "text",
+            "format": "json",
+            "redirects": 1,
+        },
+        headers={"User-Agent": UA},
+        timeout=45,
     )
-    for state_title, gov_title in row_re.findall(html):
-        state_name = state_title.replace(" (state)", "").strip()
-        code = STATE_NAMES.get(state_name)
-        if not code:
-            continue
-        gov_name = re.sub(r" \(governor\)", "", gov_title, flags=re.I).strip()
-        governors[code] = gov_name
-
-    if len(governors) < 50:
-        # Fallback: plain "Governor of X" titles in the same table.
-        simple = re.findall(
-            r"Governor of ([A-Za-z .]+).*?title=\"([^\"]+)\"",
-            html,
-            flags=re.I | re.S,
-        )
-        for state_name, gov_title in simple:
-            code = STATE_NAMES.get(state_name.strip())
-            if code and code not in governors:
-                governors[code] = gov_title.strip()
+    resp.raise_for_status()
+    html = resp.json()["parse"]["text"]["*"]
+    party_titles = {
+        "republican party",
+        "democratic party",
+        "democratic-farmer-labor party",
+        "independent",
+        "forward party",
+    }
+    governors: dict[str, str] = {}
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", html, flags=re.I | re.S):
+        titles = re.findall(r'<a[^>]+title="([^"]+)"', row)
+        state_code = None
+        for title in titles:
+            base = title.split(" (")[0].strip()
+            if base in STATE_NAMES and state_code is None:
+                state_code = STATE_NAMES[base]
+                continue
+            if state_code is None:
+                continue
+            if title.startswith("List of") or title.startswith("File:"):
+                continue
+            if base.lower() in party_titles or "party" in base.lower():
+                continue
+            if _looks_like_person_name(base):
+                governors[state_code] = base
+                break
 
     rows = [
         {"state": code, "name": governors[code], "state_name": name}
@@ -328,8 +443,8 @@ def find_changes(old: dict[str, Any], new: dict[str, Any]) -> list[str]:
     for field, label in labels.items():
         if canonicalize(old_ex.get(field)) != canonicalize(new_ex.get(field)):
             changes.append(
-                f"New {label}: {', '.join(new_ex.get(field) or []) or '(empty)'} "
-                f"(was {', '.join(old_ex.get(field) or []) or '(empty)'})"
+                f"New {label}: {new_ex.get(field) or '(empty)'} "
+                f"(was {old_ex.get(field) or '(empty)'})"
             )
 
     changes += diff_named(
@@ -406,8 +521,10 @@ def send_email(subject: str, body: str) -> None:
 def build_dataset() -> dict[str, Any]:
     questions, seniors, pdf_sha = fetch_civics_questions()
     executive = fetch_executive()
+    questions = apply_current_officials(questions, executive)
     senators, representatives = fetch_congress()
     governors = fetch_governors()
+    _assert_clean(questions, executive)
     return {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources": {
@@ -426,6 +543,36 @@ def build_dataset() -> dict[str, Any]:
         "senators": senators,
         "representatives": representatives,
     }
+
+
+def _assert_clean(questions: dict[str, Any], executive: dict[str, Any]) -> None:
+    missing = [str(i) for i in range(1, 129) if str(i) not in questions]
+    empty = [
+        k
+        for k in (str(i) for i in range(1, 129))
+        if not (questions.get(k) or {}).get("answers")
+    ]
+    noisy = []
+    for k, q in questions.items():
+        joined = " ".join(q.get("answers") or [])
+        if FOOTER_RE.search(joined) or " of 19" in joined:
+            noisy.append(k)
+        if "uscis.gov" in joined.lower() and int(k) in CURRENT_OFFICIAL_QUESTIONS:
+            noisy.append(k)
+    print(
+        f"Validation: missing={missing or 'none'} "
+        f"empty_answers={empty or 'none'} footer_noise={noisy or 'none'}"
+    )
+    for field in (
+        "president",
+        "vice_president",
+        "speaker_of_the_house",
+        "chief_justice",
+    ):
+        value = executive.get(field)
+        print(f"Validation executive.{field}={value!r}")
+        if not isinstance(value, str) or not value or "," in value:
+            print(f"WARNING: executive.{field} should be a single name")
 
 
 def maybe_simulate(data: dict[str, Any]) -> dict[str, Any]:
