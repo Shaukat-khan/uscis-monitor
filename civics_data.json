@@ -1,0 +1,5441 @@
+{
+  "generated_at": "2026-09-19T00:11:24Z",
+  "sources": {
+    "civics_pdf": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
+    "civics_pdf_sha256": "f280608c0fb6dc1eba344b4746a7ba52d02fe411fba30cedd4371819f0abe11c",
+    "testupdates": "https://www.uscis.gov/citizenship/testupdates",
+    "legislators": "https://unitedstates.github.io/congress-legislators/legislators-current.json",
+    "governors": "https://en.wikipedia.org/wiki/List_of_current_United_States_governors",
+    "house": "https://www.house.gov/representatives",
+    "senate": "https://www.senate.gov/senators/index.htm"
+  },
+  "civics_questions": {
+    "1": {
+      "number": 1,
+      "question": "What is the form of government of the United States?",
+      "answers": [
+        "Republic",
+        "Constitution-based federal republic",
+        "Representative democracy"
+      ],
+      "senior": false
+    },
+    "2": {
+      "number": 2,
+      "question": "What is the supreme law of the land? *",
+      "answers": [
+        "(U.S.) Constitution"
+      ],
+      "senior": true
+    },
+    "3": {
+      "number": 3,
+      "question": "Name one thing the U.S. Constitution does.",
+      "answers": [
+        "Forms the government",
+        "Defines powers of government",
+        "Defines the parts of government",
+        "Protects the rights of the people"
+      ],
+      "senior": false
+    },
+    "4": {
+      "number": 4,
+      "question": "The U.S. Constitution starts with the words “We the People.” What does “We the People” mean?",
+      "answers": [
+        "Self-government",
+        "Popular sovereignty",
+        "Consent of the governed",
+        "People should govern themselves",
+        "(Example of) social contract"
+      ],
+      "senior": false
+    },
+    "5": {
+      "number": 5,
+      "question": "How are changes made to the U.S. Constitution?",
+      "answers": [
+        "Amendments",
+        "The amendment process"
+      ],
+      "senior": false
+    },
+    "6": {
+      "number": 6,
+      "question": "What does the Bill of Rights protect?",
+      "answers": [
+        "(The basic) rights of Americans",
+        "(The basic) rights of people living in the United States"
+      ],
+      "senior": false
+    },
+    "7": {
+      "number": 7,
+      "question": "How many amendments does the U.S. Constitution have? *",
+      "answers": [
+        "Twenty-seven (27)"
+      ],
+      "senior": true
+    },
+    "8": {
+      "number": 8,
+      "question": "Why is the Declaration of Independence important?",
+      "answers": [
+        "It says America is free from British control.",
+        "It says all people are created equal.",
+        "It identifies inherent rights.",
+        "It identifies individual freedoms.",
+        "3 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": false
+    },
+    "9": {
+      "number": 9,
+      "question": "What founding document said the American colonies were free from Britain?",
+      "answers": [
+        "Declaration of Independence"
+      ],
+      "senior": false
+    },
+    "10": {
+      "number": 10,
+      "question": "Name two important ideas from the Declaration of Independence and the U.S. Constitution.",
+      "answers": [
+        "Equality",
+        "Liberty",
+        "Social contract",
+        "Natural rights",
+        "Limited government",
+        "Self-government"
+      ],
+      "senior": false
+    },
+    "11": {
+      "number": 11,
+      "question": "The words “Life, Liberty, and the pursuit of Happiness” are in what founding document?",
+      "answers": [
+        "Declaration of Independence"
+      ],
+      "senior": false
+    },
+    "12": {
+      "number": 12,
+      "question": "What is the economic system of the United States? *",
+      "answers": [
+        "Capitalism",
+        "Free market economy"
+      ],
+      "senior": true
+    },
+    "13": {
+      "number": 13,
+      "question": "What is the rule of law?",
+      "answers": [
+        "Everyone must follow the law.",
+        "Leaders must obey the law.",
+        "Government must obey the law.",
+        "No one is above the law."
+      ],
+      "senior": false
+    },
+    "14": {
+      "number": 14,
+      "question": "Many documents influenced the U.S. Constitution. Name one.",
+      "answers": [
+        "Declaration of Independence",
+        "Articles of Confederation",
+        "Federalist Papers",
+        "Anti-Federalist Papers",
+        "Virginia Declaration of Rights",
+        "Fundamental Orders of Connecticut",
+        "Mayflower Compact",
+        "Iroquois Great Law of Peace"
+      ],
+      "senior": false
+    },
+    "15": {
+      "number": 15,
+      "question": "There are three branches of government. Why?",
+      "answers": [
+        "So one part does not become too powerful",
+        "Checks and balances",
+        "Separation of powers",
+        "4 of 19",
+        "uscis.gov/citizenship",
+        "B: System of Government"
+      ],
+      "senior": false
+    },
+    "16": {
+      "number": 16,
+      "question": "Name the three branches of government.",
+      "answers": [
+        "Legislative, executive, and judicial",
+        "Congress, president, and the courts"
+      ],
+      "senior": false
+    },
+    "17": {
+      "number": 17,
+      "question": "The President of the United States is in charge of which branch of government?",
+      "answers": [
+        "Executive branch"
+      ],
+      "senior": false
+    },
+    "18": {
+      "number": 18,
+      "question": "What part of the federal government writes laws?",
+      "answers": [
+        "(U.S.) Congress",
+        "(U.S. or national) legislature",
+        "Legislative branch"
+      ],
+      "senior": false
+    },
+    "19": {
+      "number": 19,
+      "question": "What are the two parts of the U.S. Congress?",
+      "answers": [
+        "Senate and House (of Representatives)"
+      ],
+      "senior": false
+    },
+    "20": {
+      "number": 20,
+      "question": "Name one power of the U.S. Congress. *",
+      "answers": [
+        "Writes laws",
+        "Declares war",
+        "Makes the federal budget"
+      ],
+      "senior": true
+    },
+    "21": {
+      "number": 21,
+      "question": "How many U.S. senators are there?",
+      "answers": [
+        "One hundred (100)"
+      ],
+      "senior": false
+    },
+    "22": {
+      "number": 22,
+      "question": "How long is a term for a U.S. senator?",
+      "answers": [
+        "Six (6) years"
+      ],
+      "senior": false
+    },
+    "23": {
+      "number": 23,
+      "question": "Who is one of your state’s U.S. senators now?",
+      "answers": [
+        "Answers will vary. [District of Columbia residents and residents of U.S. territories should answer that D.C. (or",
+        "the territory where the applicant lives) has no U.S. senators.]"
+      ],
+      "senior": false
+    },
+    "24": {
+      "number": 24,
+      "question": "How many voting members are in the House of Representatives?",
+      "answers": [
+        "Four hundred thirty-five (435)"
+      ],
+      "senior": false
+    },
+    "25": {
+      "number": 25,
+      "question": "How long is a term for a member of the House of Representatives?",
+      "answers": [
+        "Two (2) years"
+      ],
+      "senior": false
+    },
+    "26": {
+      "number": 26,
+      "question": "Why do U.S. representatives serve shorter terms than U.S. senators?",
+      "answers": [
+        "To more closely follow public opinion"
+      ],
+      "senior": false
+    },
+    "27": {
+      "number": 27,
+      "question": "How many senators does each state have?",
+      "answers": [
+        "Two (2)",
+        "5 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": false
+    },
+    "28": {
+      "number": 28,
+      "question": "Why does each state have two senators?",
+      "answers": [
+        "Equal representation (for small states)",
+        "The Great Compromise (Connecticut Compromise)"
+      ],
+      "senior": false
+    },
+    "29": {
+      "number": 29,
+      "question": "Name your U.S. representative.",
+      "answers": [
+        "Answers will vary. [Residents of territories with nonvoting Delegates or Resident Commissioners may provide",
+        "the name of that Delegate or Commissioner. Also acceptable is any statement that the territory has no (voting)",
+        "representatives in Congress.]"
+      ],
+      "senior": false
+    },
+    "30": {
+      "number": 30,
+      "question": "What is the name of the Speaker of the House of Representatives now? *",
+      "answers": [],
+      "senior": true
+    },
+    "31": {
+      "number": 31,
+      "question": "Who does a U.S. senator represent?",
+      "answers": [
+        "Citizens of their state",
+        "People of their state"
+      ],
+      "senior": false
+    },
+    "32": {
+      "number": 32,
+      "question": "Who elects U.S. senators?",
+      "answers": [
+        "Citizens from their state"
+      ],
+      "senior": false
+    },
+    "33": {
+      "number": 33,
+      "question": "Who does a member of the House of Representatives represent?",
+      "answers": [
+        "Citizens in their (congressional) district",
+        "Citizens in their district",
+        "People from their (congressional) district",
+        "People in their district"
+      ],
+      "senior": false
+    },
+    "34": {
+      "number": 34,
+      "question": "Who elects members of the House of Representatives?",
+      "answers": [
+        "Citizens from their (congressional) district"
+      ],
+      "senior": false
+    },
+    "35": {
+      "number": 35,
+      "question": "Some states have more representatives than other states. Why?",
+      "answers": [
+        "(Because of) the state’s population",
+        "(Because) they have more people",
+        "(Because) some states have more people"
+      ],
+      "senior": false
+    },
+    "36": {
+      "number": 36,
+      "question": "The President of the United States is elected for how many years? *",
+      "answers": [
+        "Four (4) years"
+      ],
+      "senior": true
+    },
+    "37": {
+      "number": 37,
+      "question": "The President of the United States can serve only two terms. Why?",
+      "answers": [
+        "(Because of) the 22nd Amendment",
+        "To keep the president from becoming too powerful"
+      ],
+      "senior": false
+    },
+    "38": {
+      "number": 38,
+      "question": "What is the name of the President of the United States now? *",
+      "answers": [
+        "6 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": true
+    },
+    "39": {
+      "number": 39,
+      "question": "What is the name of the Vice President of the United States now? *",
+      "answers": [],
+      "senior": true
+    },
+    "40": {
+      "number": 40,
+      "question": "If the president can no longer serve, who becomes president?",
+      "answers": [
+        "The Vice President (of the United States)"
+      ],
+      "senior": false
+    },
+    "41": {
+      "number": 41,
+      "question": "Name one power of the president.",
+      "answers": [
+        "Signs bills into law",
+        "Vetoes bills",
+        "Enforces laws",
+        "Commander in Chief (of the military)",
+        "Chief diplomat",
+        "Appoints federal judges"
+      ],
+      "senior": false
+    },
+    "42": {
+      "number": 42,
+      "question": "Who is Commander in Chief of the U.S. military?",
+      "answers": [
+        "The President (of the United States)"
+      ],
+      "senior": false
+    },
+    "43": {
+      "number": 43,
+      "question": "Who signs bills to become laws?",
+      "answers": [
+        "The President (of the United States)"
+      ],
+      "senior": false
+    },
+    "44": {
+      "number": 44,
+      "question": "Who vetoes bills? *",
+      "answers": [
+        "The President (of the United States)"
+      ],
+      "senior": true
+    },
+    "45": {
+      "number": 45,
+      "question": "Who appoints federal judges?",
+      "answers": [
+        "The President (of the United States)"
+      ],
+      "senior": false
+    },
+    "46": {
+      "number": 46,
+      "question": "The executive branch has many parts. Name one.",
+      "answers": [
+        "President (of the United States)",
+        "Cabinet",
+        "Federal departments and agencies"
+      ],
+      "senior": false
+    },
+    "47": {
+      "number": 47,
+      "question": "What does the President’s Cabinet do?",
+      "answers": [
+        "Advises the President (of the United States)",
+        "7 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": false
+    },
+    "48": {
+      "number": 48,
+      "question": "What are two Cabinet-level positions?",
+      "answers": [
+        "Attorney General",
+        "Secretary of Agriculture",
+        "Secretary of Commerce",
+        "Secretary of Education",
+        "Secretary of Energy",
+        "Secretary of Health and Human Services",
+        "Secretary of Homeland Security",
+        "Secretary of Housing and Urban Development",
+        "Secretary of the Interior",
+        "Secretary of Labor",
+        "Secretary of State",
+        "Secretary of Transportation",
+        "Secretary of the Treasury",
+        "Secretary of Veterans Affairs",
+        "Secretary of War (Defense)",
+        "Vice-President",
+        "Administrator of the Environmental Protection Agency",
+        "Administrator of the Small Business Administration",
+        "Director of the Central Intelligence Agency",
+        "Director of the Office of Management and Budget",
+        "Director of National Intelligence",
+        "United States Trade Representative"
+      ],
+      "senior": false
+    },
+    "49": {
+      "number": 49,
+      "question": "Why is the Electoral College important?",
+      "answers": [
+        "It decides who is elected president.",
+        "It provides a compromise between the popular election of the president and congressional selection."
+      ],
+      "senior": false
+    },
+    "50": {
+      "number": 50,
+      "question": "What is one part of the judicial branch?",
+      "answers": [
+        "Supreme Court",
+        "Federal Courts"
+      ],
+      "senior": false
+    },
+    "51": {
+      "number": 51,
+      "question": "What does the judicial branch do?",
+      "answers": [
+        "Reviews laws",
+        "Explains laws",
+        "Resolves disputes (disagreements) about the law",
+        "Decides if a law goes against the (U.S.) Constitution"
+      ],
+      "senior": false
+    },
+    "52": {
+      "number": 52,
+      "question": "What is the highest court in the United States? *",
+      "answers": [
+        "Supreme Court",
+        "8 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": true
+    },
+    "53": {
+      "number": 53,
+      "question": "How many seats are on the Supreme Court?",
+      "answers": [
+        "Nine (9)"
+      ],
+      "senior": false
+    },
+    "54": {
+      "number": 54,
+      "question": "How many Supreme Court justices are usually needed to decide a case?",
+      "answers": [
+        "Five (5)"
+      ],
+      "senior": false
+    },
+    "55": {
+      "number": 55,
+      "question": "How long do Supreme Court justices serve?",
+      "answers": [
+        "(For) life",
+        "Lifetime appointment",
+        "(Until) retirement"
+      ],
+      "senior": false
+    },
+    "56": {
+      "number": 56,
+      "question": "Supreme Court justices serve for life. Why?",
+      "answers": [
+        "To be independent (of politics)",
+        "To limit outside (political) influence"
+      ],
+      "senior": false
+    },
+    "57": {
+      "number": 57,
+      "question": "Who is the Chief Justice of the United States now?",
+      "answers": [],
+      "senior": false
+    },
+    "58": {
+      "number": 58,
+      "question": "Name one power that is only for the federal government.",
+      "answers": [
+        "Print paper money",
+        "Mint coins",
+        "Declare war",
+        "Create an army",
+        "Make treaties",
+        "Set foreign policy"
+      ],
+      "senior": false
+    },
+    "59": {
+      "number": 59,
+      "question": "Name one power that is only for the states.",
+      "answers": [
+        "Provide schooling and education",
+        "Provide protection (police)",
+        "Provide safety (fire departments)",
+        "Give a driver’s license",
+        "Approve zoning and land use"
+      ],
+      "senior": false
+    },
+    "60": {
+      "number": 60,
+      "question": "What is the purpose of the 10th Amendment?",
+      "answers": [
+        "(It states that the) powers not given to the federal government belong to the states or to the people."
+      ],
+      "senior": false
+    },
+    "61": {
+      "number": 61,
+      "question": "Who is the governor of your state now? *",
+      "answers": [
+        "Answers will vary. [District of Columbia residents should answer that D.C. does not have a governor.]"
+      ],
+      "senior": true
+    },
+    "62": {
+      "number": 62,
+      "question": "What is the capital of your state?",
+      "answers": [
+        "Answers will vary. [District of Columbia residents should answer that D.C. is not a state and does not have a",
+        "capital. Residents of U.S. territories should name the capital of the territory.]",
+        "9 of 19",
+        "uscis.gov/citizenship",
+        "C: Rights and Responsibilities"
+      ],
+      "senior": false
+    },
+    "63": {
+      "number": 63,
+      "question": "There are four amendments to the U.S. Constitution about who can vote. Describe one of them.",
+      "answers": [
+        "Citizens eighteen (18) and older (can vote).",
+        "You don’t have to pay (a poll tax) to vote.",
+        "Any citizen can vote. (Women and men can vote.)",
+        "A male citizen of any race (can vote)."
+      ],
+      "senior": false
+    },
+    "64": {
+      "number": 64,
+      "question": "Who can vote in federal elections, run for federal office, and serve on a jury in the United States?",
+      "answers": [
+        "Citizens",
+        "Citizens of the United States",
+        "U.S. citizens"
+      ],
+      "senior": false
+    },
+    "65": {
+      "number": 65,
+      "question": "What are three rights of everyone living in the United States?",
+      "answers": [
+        "Freedom of expression",
+        "Freedom of speech",
+        "Freedom of assembly",
+        "Freedom to petition the government",
+        "Freedom of religion",
+        "The right to bear arms"
+      ],
+      "senior": false
+    },
+    "66": {
+      "number": 66,
+      "question": "What do we show loyalty to when we say the Pledge of Allegiance? *",
+      "answers": [
+        "The United States",
+        "The flag"
+      ],
+      "senior": true
+    },
+    "67": {
+      "number": 67,
+      "question": "Name two promises that new citizens make in the Oath of Allegiance.",
+      "answers": [
+        "Give up loyalty to other countries",
+        "Defend the (U.S.) Constitution",
+        "Obey the laws of the United States",
+        "Serve in the military (if needed)",
+        "Serve (help, do important work for) the nation (if needed)",
+        "Be loyal to the United States"
+      ],
+      "senior": false
+    },
+    "68": {
+      "number": 68,
+      "question": "How can people become United States citizens?",
+      "answers": [
+        "Be born in the United States, under the conditions set by the 14th Amendment",
+        "Naturalize",
+        "Derive citizenship (under conditions set by Congress)",
+        "10 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": false
+    },
+    "69": {
+      "number": 69,
+      "question": "What are two examples of civic participation in the United States?",
+      "answers": [
+        "Vote",
+        "Run for office",
+        "Join a political party",
+        "Help with a campaign",
+        "Join a civic group",
+        "Join a community group",
+        "Give an elected official your opinion (on an issue)",
+        "Contact elected officials",
+        "Support or oppose an issue or policy",
+        "Write to a newspaper"
+      ],
+      "senior": false
+    },
+    "70": {
+      "number": 70,
+      "question": "What is one way Americans can serve their country?",
+      "answers": [
+        "Vote",
+        "Pay taxes",
+        "Obey the law",
+        "Serve in the military",
+        "Run for office",
+        "Work for local, state, or federal government"
+      ],
+      "senior": false
+    },
+    "71": {
+      "number": 71,
+      "question": "Why is it important to pay federal taxes?",
+      "answers": [
+        "Required by law",
+        "All people pay to fund the federal government",
+        "Required by the (U.S.) Constitution (16th Amendment)",
+        "Civic duty"
+      ],
+      "senior": false
+    },
+    "72": {
+      "number": 72,
+      "question": "It is important for all men age 18 through 25 to register for the Selective Service. Name one reason why.",
+      "answers": [
+        "Required by law",
+        "Civic duty",
+        "Makes the draft fair, if needed",
+        "11 of 19",
+        "uscis.gov/citizenship",
+        "AMERICAN HISTORY",
+        "A: Colonial Period and Independence"
+      ],
+      "senior": false
+    },
+    "73": {
+      "number": 73,
+      "question": "The colonists came to America for many reasons. Name one.",
+      "answers": [
+        "Freedom",
+        "Political liberty",
+        "Religious freedom",
+        "Economic opportunity",
+        "Escape persecution"
+      ],
+      "senior": false
+    },
+    "74": {
+      "number": 74,
+      "question": "Who lived in America before the Europeans arrived? *",
+      "answers": [
+        "American Indians",
+        "Native Americans"
+      ],
+      "senior": true
+    },
+    "75": {
+      "number": 75,
+      "question": "What group of people was taken and sold as slaves?",
+      "answers": [
+        "Africans",
+        "People from Africa"
+      ],
+      "senior": false
+    },
+    "76": {
+      "number": 76,
+      "question": "What war did the Americans fight to win independence from Britain?",
+      "answers": [
+        "American Revolution",
+        "The (American) Revolutionary War",
+        "War for (American) Independence"
+      ],
+      "senior": false
+    },
+    "77": {
+      "number": 77,
+      "question": "Name one reason why the Americans declared independence from Britain.",
+      "answers": [
+        "High taxes",
+        "Taxation without representation",
+        "British soldiers stayed in Americans’ houses (boarding, quartering)",
+        "They did not have self-government",
+        "Boston Massacre",
+        "Boston Tea Party (Tea Act)",
+        "Stamp Act",
+        "Sugar Act",
+        "Townshend Acts",
+        "Intolerable (Coercive) Acts"
+      ],
+      "senior": false
+    },
+    "78": {
+      "number": 78,
+      "question": "Who wrote the Declaration of Independence? *",
+      "answers": [
+        "(Thomas) Jefferson"
+      ],
+      "senior": true
+    },
+    "79": {
+      "number": 79,
+      "question": "When was the Declaration of Independence adopted?",
+      "answers": [
+        "July 4, 1776",
+        "12 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": false
+    },
+    "80": {
+      "number": 80,
+      "question": "The American Revolution had many important events. Name one.",
+      "answers": [
+        "(Battle of) Bunker Hill",
+        "Declaration of Independence",
+        "Washington Crossing the Delaware (Battle of Trenton)",
+        "(Battle of) Saratoga",
+        "Valley Forge (Encampment)",
+        "(Battle of) Yorktown (British surrender at Yorktown)"
+      ],
+      "senior": false
+    },
+    "81": {
+      "number": 81,
+      "question": "There were 13 original states. Name five.",
+      "answers": [
+        "New Hampshire",
+        "Massachusetts",
+        "Rhode Island",
+        "Connecticut",
+        "New York",
+        "New Jersey",
+        "Pennsylvania",
+        "Delaware",
+        "Maryland",
+        "Virginia",
+        "North Carolina",
+        "South Carolina",
+        "Georgia"
+      ],
+      "senior": false
+    },
+    "82": {
+      "number": 82,
+      "question": "What founding document was written in 1787?",
+      "answers": [
+        "(U.S.) Constitution"
+      ],
+      "senior": false
+    },
+    "83": {
+      "number": 83,
+      "question": "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.",
+      "answers": [
+        "(James) Madison",
+        "(Alexander) Hamilton",
+        "(John) Jay",
+        "Publius"
+      ],
+      "senior": false
+    },
+    "84": {
+      "number": 84,
+      "question": "Why were the Federalist Papers important?",
+      "answers": [
+        "They helped people understand the (U.S.) Constitution.",
+        "They supported passing the (U.S.) Constitution."
+      ],
+      "senior": false
+    },
+    "85": {
+      "number": 85,
+      "question": "Benjamin Franklin is famous for many things. Name one.",
+      "answers": [
+        "Founded the first free public libraries",
+        "First Postmaster General of the United States",
+        "Helped write the Declaration of Independence",
+        "Inventor",
+        "U.S. diplomat",
+        "13 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": false
+    },
+    "86": {
+      "number": 86,
+      "question": "George Washington is famous for many things. Name one. *",
+      "answers": [
+        "“Father of Our Country”",
+        "First president of the United States",
+        "General of the Continental Army",
+        "President of the Constitutional Convention"
+      ],
+      "senior": true
+    },
+    "87": {
+      "number": 87,
+      "question": "Thomas Jefferson is famous for many things. Name one.",
+      "answers": [
+        "Writer of the Declaration of Independence",
+        "Third president of the United States",
+        "Doubled the size of the United States (Louisiana Purchase)",
+        "First Secretary of State",
+        "Founded the University of Virginia",
+        "Writer of the Virginia Statute on Religious Freedom"
+      ],
+      "senior": false
+    },
+    "88": {
+      "number": 88,
+      "question": "James Madison is famous for many things. Name one.",
+      "answers": [
+        "“Father of the Constitution”",
+        "Fourth president of the United States",
+        "President during the War of 1812",
+        "One of the writers of the Federalist Papers"
+      ],
+      "senior": false
+    },
+    "89": {
+      "number": 89,
+      "question": "Alexander Hamilton is famous for many things. Name one.",
+      "answers": [
+        "First Secretary of the Treasury",
+        "One of the writers of the Federalist Papers",
+        "Helped establish the First Bank of the United States",
+        "Aide to General George Washington",
+        "Member of the Continental Congress",
+        "B: 1800s"
+      ],
+      "senior": false
+    },
+    "90": {
+      "number": 90,
+      "question": "What territory did the United States buy from France in 1803?",
+      "answers": [
+        "Louisiana Territory",
+        "Louisiana"
+      ],
+      "senior": false
+    },
+    "91": {
+      "number": 91,
+      "question": "Name one war fought by the United States in the 1800s.",
+      "answers": [
+        "War of 1812",
+        "Mexican-American War",
+        "Civil War",
+        "Spanish-American War"
+      ],
+      "senior": false
+    },
+    "92": {
+      "number": 92,
+      "question": "Name the U.S. war between the North and the South.",
+      "answers": [
+        "The Civil War",
+        "14 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": false
+    },
+    "93": {
+      "number": 93,
+      "question": "The Civil War had many important events. Name one.",
+      "answers": [
+        "(Battle of) Fort Sumter",
+        "Emancipation Proclamation",
+        "(Battle of) Vicksburg",
+        "(Battle of) Gettysburg",
+        "Sherman’s March",
+        "(Surrender at) Appomattox",
+        "(Battle of) Antietam/Sharpsburg",
+        "Lincoln was assassinated."
+      ],
+      "senior": false
+    },
+    "94": {
+      "number": 94,
+      "question": "Abraham Lincoln is famous for many things. Name one. *",
+      "answers": [
+        "Freed the slaves (Emancipation Proclamation)",
+        "Saved (or preserved) the Union",
+        "Led the United States during the Civil War",
+        "16th president of the United States",
+        "Delivered the Gettysburg Address"
+      ],
+      "senior": true
+    },
+    "95": {
+      "number": 95,
+      "question": "What did the Emancipation Proclamation do?",
+      "answers": [
+        "Freed the slaves",
+        "Freed slaves in the Confederacy",
+        "Freed slaves in the Confederate states",
+        "Freed slaves in most Southern states"
+      ],
+      "senior": false
+    },
+    "96": {
+      "number": 96,
+      "question": "What U.S. war ended slavery?",
+      "answers": [
+        "The Civil War"
+      ],
+      "senior": false
+    },
+    "97": {
+      "number": 97,
+      "question": "What amendment says all persons born or naturalized in the United States,",
+      "answers": [
+        "and subject to the jurisdiction thereof, are U.S. citizens?",
+        "14th Amendment"
+      ],
+      "senior": false
+    },
+    "98": {
+      "number": 98,
+      "question": "When did all men get the right to vote?",
+      "answers": [
+        "After the Civil War",
+        "During Reconstruction",
+        "(With the) 15th Amendment",
+        "1870"
+      ],
+      "senior": false
+    },
+    "99": {
+      "number": 99,
+      "question": "Name one leader of the women’s rights movement in the 1800s.",
+      "answers": [
+        "Susan B. Anthony",
+        "Elizabeth Cady Stanton",
+        "Sojourner Truth",
+        "Harriet Tubman",
+        "Lucretia Mott",
+        "Lucy Stone",
+        "15 of 19",
+        "uscis.gov/citizenship",
+        "C: Recent American History and Other Important Historical Information"
+      ],
+      "senior": false
+    },
+    "100": {
+      "number": 100,
+      "question": "Name one war fought by the United States in the 1900s.",
+      "answers": [
+        "World War I",
+        "World War II",
+        "Korean War",
+        "Vietnam War",
+        "(Persian) Gulf War"
+      ],
+      "senior": false
+    },
+    "101": {
+      "number": 101,
+      "question": "Why did the United States enter World War I?",
+      "answers": [
+        "Because Germany attacked U.S. (civilian) ships",
+        "To support the Allied Powers (England, France, Italy, and Russia)",
+        "To oppose the Central Powers (Germany, Austria-Hungary, the Ottoman Empire, and Bulgaria)"
+      ],
+      "senior": false
+    },
+    "102": {
+      "number": 102,
+      "question": "When did all women get the right to vote?",
+      "answers": [
+        "1920",
+        "After World War I",
+        "(With the) 19th Amendment"
+      ],
+      "senior": false
+    },
+    "103": {
+      "number": 103,
+      "question": "What was the Great Depression?",
+      "answers": [
+        "Longest economic recession in modern history"
+      ],
+      "senior": false
+    },
+    "104": {
+      "number": 104,
+      "question": "When did the Great Depression start?",
+      "answers": [
+        "The Great Crash (1929)",
+        "Stock market crash of 1929"
+      ],
+      "senior": false
+    },
+    "105": {
+      "number": 105,
+      "question": "Who was president during the Great Depression and World War II?",
+      "answers": [
+        "(Franklin) Roosevelt"
+      ],
+      "senior": false
+    },
+    "106": {
+      "number": 106,
+      "question": "Why did the United States enter World War II?",
+      "answers": [
+        "(Bombing of) Pearl Harbor",
+        "Japanese attacked Pearl Harbor",
+        "To support the Allied Powers (England, France, and Russia)",
+        "To oppose the Axis Powers (Germany, Italy, and Japan)"
+      ],
+      "senior": false
+    },
+    "107": {
+      "number": 107,
+      "question": "Dwight Eisenhower is famous for many things. Name one.",
+      "answers": [
+        "General during World War II",
+        "President at the end of (during) the Korean War",
+        "34th president of the United States",
+        "Signed the Federal-Aid Highway Act of 1956 (Created the Interstate System)",
+        "16 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": false
+    },
+    "108": {
+      "number": 108,
+      "question": "Who was the United States’ main rival during the Cold War?",
+      "answers": [
+        "Soviet Union",
+        "USSR",
+        "Russia"
+      ],
+      "senior": false
+    },
+    "109": {
+      "number": 109,
+      "question": "During the Cold War, what was one main concern of the United States?",
+      "answers": [
+        "Communism",
+        "Nuclear war"
+      ],
+      "senior": false
+    },
+    "110": {
+      "number": 110,
+      "question": "Why did the United States enter the Korean War?",
+      "answers": [
+        "To stop the spread of communism"
+      ],
+      "senior": false
+    },
+    "111": {
+      "number": 111,
+      "question": "Why did the United States enter the Vietnam War?",
+      "answers": [
+        "To stop the spread of communism"
+      ],
+      "senior": false
+    },
+    "112": {
+      "number": 112,
+      "question": "What did the civil rights movement do?",
+      "answers": [
+        "Fought to end racial discrimination"
+      ],
+      "senior": false
+    },
+    "113": {
+      "number": 113,
+      "question": "Martin Luther King, Jr. is famous for many things. Name one. *",
+      "answers": [
+        "Fought for civil rights",
+        "Worked for equality for all Americans",
+        "Worked to ensure that people would “not be judged by the color of their skin, but by the content",
+        "of their character”"
+      ],
+      "senior": true
+    },
+    "114": {
+      "number": 114,
+      "question": "Why did the United States enter the Persian Gulf War?",
+      "answers": [
+        "To force the Iraqi military from Kuwait"
+      ],
+      "senior": false
+    },
+    "115": {
+      "number": 115,
+      "question": "What major event happened on September 11, 2001 in the United States? *",
+      "answers": [
+        "Terrorists attacked the United States",
+        "Terrorists took over two planes and crashed them into the World Trade Center in New York City",
+        "Terrorists took over a plane and crashed into the Pentagon in Arlington, Virginia",
+        "Terrorists took over a plane originally aimed at Washington, D.C., and crashed in a field in Pennsylvania"
+      ],
+      "senior": true
+    },
+    "116": {
+      "number": 116,
+      "question": "Name one U.S. military conflict after the September 11, 2001 attacks.",
+      "answers": [
+        "(Global) War on Terror",
+        "War in Afghanistan",
+        "War in Iraq",
+        "17 of 19",
+        "uscis.gov/citizenship"
+      ],
+      "senior": false
+    },
+    "117": {
+      "number": 117,
+      "question": "Name one American Indian tribe in the United States.",
+      "answers": [
+        "Apache",
+        "Blackfeet",
+        "Cayuga",
+        "Cherokee",
+        "Cheyenne",
+        "Chippewa",
+        "Choctaw",
+        "Creek",
+        "Crow",
+        "Hopi",
+        "Huron",
+        "Inupiat",
+        "Lakota",
+        "Mohawk",
+        "Mohegan",
+        "Navajo",
+        "Oneida",
+        "Onondaga",
+        "Pueblo",
+        "Seminole",
+        "Seneca",
+        "Shawnee",
+        "Sioux",
+        "Teton",
+        "Tuscarora",
+        "For a complete list of tribes, please visit bia.gov."
+      ],
+      "senior": false
+    },
+    "118": {
+      "number": 118,
+      "question": "Name one example of an American innovation.",
+      "answers": [
+        "Light bulb",
+        "Automobile (cars, internal combustion engine)",
+        "Skyscrapers",
+        "Airplane",
+        "Assembly line",
+        "Landing on the moon",
+        "Integrated circuit (IC)",
+        "18 of 19",
+        "uscis.gov/citizenship",
+        "SYMBOLS AND HOLIDAYS",
+        "A: Symbols"
+      ],
+      "senior": false
+    },
+    "119": {
+      "number": 119,
+      "question": "What is the capital of the United States?",
+      "answers": [
+        "Washington, D.C."
+      ],
+      "senior": false
+    },
+    "120": {
+      "number": 120,
+      "question": "Where is the Statue of Liberty?",
+      "answers": [
+        "New York (Harbor)",
+        "Liberty Island [Also acceptable are New Jersey, near New York City, and on the Hudson (River).]"
+      ],
+      "senior": false
+    },
+    "121": {
+      "number": 121,
+      "question": "Why does the flag have 13 stripes? *",
+      "answers": [
+        "(Because there were) 13 original colonies",
+        "(Because the stripes) represent the original colonies"
+      ],
+      "senior": true
+    },
+    "122": {
+      "number": 122,
+      "question": "Why does the flag have 50 stars?",
+      "answers": [
+        "(Because there is) one star for each state",
+        "(Because) each star represents a state",
+        "(Because there are) 50 states"
+      ],
+      "senior": false
+    },
+    "123": {
+      "number": 123,
+      "question": "What is the name of the national anthem?",
+      "answers": [
+        "The Star-Spangled Banner"
+      ],
+      "senior": false
+    },
+    "124": {
+      "number": 124,
+      "question": "The Nation’s first motto was “E Pluribus Unum.” What does that mean?",
+      "answers": [
+        "Out of many, one",
+        "We all become one",
+        "19 of 19",
+        "uscis.gov/citizenship",
+        "B: Holidays"
+      ],
+      "senior": false
+    },
+    "125": {
+      "number": 125,
+      "question": "What is Independence Day?",
+      "answers": [
+        "A holiday to celebrate U.S. independence (from Britain)",
+        "The country’s birthday"
+      ],
+      "senior": false
+    },
+    "126": {
+      "number": 126,
+      "question": "Name three national U.S. holidays. *",
+      "answers": [
+        "New Year’s Day",
+        "Martin Luther King, Jr. Day",
+        "Presidents Day (Washington’s Birthday)",
+        "Memorial Day",
+        "Juneteenth",
+        "Independence Day",
+        "Labor Day",
+        "Columbus Day",
+        "Veterans Day",
+        "Thanksgiving Day",
+        "Christmas Day"
+      ],
+      "senior": true
+    },
+    "127": {
+      "number": 127,
+      "question": "What is Memorial Day?",
+      "answers": [
+        "A holiday to honor soldiers who died in military service"
+      ],
+      "senior": false
+    },
+    "128": {
+      "number": 128,
+      "question": "What is Veterans Day?",
+      "answers": [
+        "A holiday to honor people in the (U.S.) military",
+        "A holiday to honor people who have served (in the U.S. military)"
+      ],
+      "senior": false
+    }
+  },
+  "seniors_questions": [
+    2,
+    7,
+    12,
+    20,
+    30,
+    36,
+    38,
+    39,
+    44,
+    52,
+    61,
+    66,
+    74,
+    78,
+    86,
+    94,
+    113,
+    115,
+    121,
+    126
+  ],
+  "executive": {
+    "president": [
+      "Donald J. Trump",
+      "Donald Trump",
+      "Trump",
+      "JD Vance",
+      "Vance",
+      "nine (9)"
+    ],
+    "vice_president": [
+      "JD Vance",
+      "Vance",
+      "nine (9)",
+      "John Roberts",
+      "John G. Roberts, Jr"
+    ],
+    "speaker_of_the_house": [
+      "Mike Johnson",
+      "Johnson",
+      "James Michael Johnson (birth name)"
+    ],
+    "chief_justice": [
+      "John Roberts",
+      "John G. Roberts, Jr"
+    ],
+    "source": "https://www.uscis.gov/citizenship/testupdates"
+  },
+  "governors": [
+    {
+      "state": "AK",
+      "name": "List of governors of Alaska",
+      "state_name": "Alaska"
+    },
+    {
+      "state": "AL",
+      "name": "List of governors of Alabama",
+      "state_name": "Alabama"
+    },
+    {
+      "state": "AR",
+      "name": "List of governors of Arkansas",
+      "state_name": "Arkansas"
+    },
+    {
+      "state": "AZ",
+      "name": "List of governors of Arizona",
+      "state_name": "Arizona"
+    },
+    {
+      "state": "CA",
+      "name": "List of governors of California",
+      "state_name": "California"
+    },
+    {
+      "state": "CO",
+      "name": "Governor of Colorado",
+      "state_name": "Colorado"
+    },
+    {
+      "state": "CT",
+      "name": "List of governors of Connecticut",
+      "state_name": "Connecticut"
+    },
+    {
+      "state": "DE",
+      "name": "List of governors of Delaware",
+      "state_name": "Delaware"
+    },
+    {
+      "state": "FL",
+      "name": "List of governors of Florida",
+      "state_name": "Florida"
+    },
+    {
+      "state": "GA",
+      "name": "List of governors of Georgia",
+      "state_name": "Georgia"
+    },
+    {
+      "state": "HI",
+      "name": "List of governors of Hawaii",
+      "state_name": "Hawaii"
+    },
+    {
+      "state": "IA",
+      "name": "List of governors of Iowa",
+      "state_name": "Iowa"
+    },
+    {
+      "state": "ID",
+      "name": "List of governors of Idaho",
+      "state_name": "Idaho"
+    },
+    {
+      "state": "IL",
+      "name": "List of governors of Illinois",
+      "state_name": "Illinois"
+    },
+    {
+      "state": "IN",
+      "name": "List of governors of Indiana",
+      "state_name": "Indiana"
+    },
+    {
+      "state": "KS",
+      "name": "List of governors of Kansas",
+      "state_name": "Kansas"
+    },
+    {
+      "state": "KY",
+      "name": "List of governors of Kentucky",
+      "state_name": "Kentucky"
+    },
+    {
+      "state": "LA",
+      "name": "List of governors of Louisiana",
+      "state_name": "Louisiana"
+    },
+    {
+      "state": "MA",
+      "name": "List of governors of Massachusetts",
+      "state_name": "Massachusetts"
+    },
+    {
+      "state": "MD",
+      "name": "List of governors of Maryland",
+      "state_name": "Maryland"
+    },
+    {
+      "state": "ME",
+      "name": "List of governors of Maine",
+      "state_name": "Maine"
+    },
+    {
+      "state": "MI",
+      "name": "List of governors of Michigan",
+      "state_name": "Michigan"
+    },
+    {
+      "state": "MN",
+      "name": "List of governors of Minnesota",
+      "state_name": "Minnesota"
+    },
+    {
+      "state": "MO",
+      "name": "List of governors of Missouri",
+      "state_name": "Missouri"
+    },
+    {
+      "state": "MS",
+      "name": "List of governors of Mississippi",
+      "state_name": "Mississippi"
+    },
+    {
+      "state": "MT",
+      "name": "List of governors of Montana",
+      "state_name": "Montana"
+    },
+    {
+      "state": "NC",
+      "name": "List of governors of North Carolina",
+      "state_name": "North Carolina"
+    },
+    {
+      "state": "ND",
+      "name": "List of governors of North Dakota",
+      "state_name": "North Dakota"
+    },
+    {
+      "state": "NE",
+      "name": "List of governors of Nebraska",
+      "state_name": "Nebraska"
+    },
+    {
+      "state": "NH",
+      "name": "List of governors of New Hampshire",
+      "state_name": "New Hampshire"
+    },
+    {
+      "state": "NJ",
+      "name": "List of governors of New Jersey",
+      "state_name": "New Jersey"
+    },
+    {
+      "state": "NM",
+      "name": "List of governors of New Mexico",
+      "state_name": "New Mexico"
+    },
+    {
+      "state": "NV",
+      "name": "List of governors of Nevada",
+      "state_name": "Nevada"
+    },
+    {
+      "state": "NY",
+      "name": "List of governors of New York",
+      "state_name": "New York"
+    },
+    {
+      "state": "OH",
+      "name": "List of governors of Ohio",
+      "state_name": "Ohio"
+    },
+    {
+      "state": "OK",
+      "name": "List of governors of Oklahoma",
+      "state_name": "Oklahoma"
+    },
+    {
+      "state": "OR",
+      "name": "List of governors of Oregon",
+      "state_name": "Oregon"
+    },
+    {
+      "state": "PA",
+      "name": "List of governors of Pennsylvania",
+      "state_name": "Pennsylvania"
+    },
+    {
+      "state": "RI",
+      "name": "List of governors of Rhode Island",
+      "state_name": "Rhode Island"
+    },
+    {
+      "state": "SC",
+      "name": "Attorney General of South Carolina",
+      "state_name": "South Carolina"
+    },
+    {
+      "state": "SD",
+      "name": "List of governors of South Dakota",
+      "state_name": "South Dakota"
+    },
+    {
+      "state": "TN",
+      "name": "List of governors of Tennessee",
+      "state_name": "Tennessee"
+    },
+    {
+      "state": "TX",
+      "name": "List of governors of Texas",
+      "state_name": "Texas"
+    },
+    {
+      "state": "UT",
+      "name": "List of governors of Utah",
+      "state_name": "Utah"
+    },
+    {
+      "state": "VA",
+      "name": "List of governors of Virginia",
+      "state_name": "Virginia"
+    },
+    {
+      "state": "VT",
+      "name": "List of governors of Vermont",
+      "state_name": "Vermont"
+    },
+    {
+      "state": "WA",
+      "name": "List of governors of Washington",
+      "state_name": "Washington"
+    },
+    {
+      "state": "WI",
+      "name": "List of governors of Wisconsin",
+      "state_name": "Wisconsin"
+    },
+    {
+      "state": "WV",
+      "name": "List of governors of West Virginia",
+      "state_name": "West Virginia"
+    },
+    {
+      "state": "WY",
+      "name": "List of governors of Wyoming",
+      "state_name": "Wyoming"
+    }
+  ],
+  "senators": [
+    {
+      "name": "Dan Sullivan",
+      "state": "AK",
+      "party": "Republican",
+      "url": "https://www.sullivan.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Lisa Murkowski",
+      "state": "AK",
+      "party": "Republican",
+      "url": "https://www.murkowski.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Katie Boyd Britt",
+      "state": "AL",
+      "party": "Republican",
+      "url": "https://www.britt.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Tommy Tuberville",
+      "state": "AL",
+      "party": "Republican",
+      "url": "https://www.tuberville.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "John Boozman",
+      "state": "AR",
+      "party": "Republican",
+      "url": "https://www.boozman.senate.gov/public",
+      "class": 3
+    },
+    {
+      "name": "Tom Cotton",
+      "state": "AR",
+      "party": "Republican",
+      "url": "https://www.cotton.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Mark Kelly",
+      "state": "AZ",
+      "party": "Democrat",
+      "url": "https://www.kelly.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Ruben Gallego",
+      "state": "AZ",
+      "party": "Democrat",
+      "url": "https://www.gallego.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Adam B. Schiff",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://www.schiff.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Alex Padilla",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://www.padilla.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "John W. Hickenlooper",
+      "state": "CO",
+      "party": "Democrat",
+      "url": "https://www.hickenlooper.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Michael F. Bennet",
+      "state": "CO",
+      "party": "Democrat",
+      "url": "https://www.bennet.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Christopher Murphy",
+      "state": "CT",
+      "party": "Democrat",
+      "url": "https://www.murphy.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Richard Blumenthal",
+      "state": "CT",
+      "party": "Democrat",
+      "url": "https://www.blumenthal.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Christopher A. Coons",
+      "state": "DE",
+      "party": "Democrat",
+      "url": "https://www.coons.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Lisa Blunt Rochester",
+      "state": "DE",
+      "party": "Democrat",
+      "url": "https://www.bluntrochester.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Ashley Moody",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://www.moody.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Rick Scott",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://www.rickscott.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Jon Ossoff",
+      "state": "GA",
+      "party": "Democrat",
+      "url": "https://www.ossoff.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Raphael G. Warnock",
+      "state": "GA",
+      "party": "Democrat",
+      "url": "https://www.warnock.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Brian Schatz",
+      "state": "HI",
+      "party": "Democrat",
+      "url": "https://www.schatz.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Mazie K. Hirono",
+      "state": "HI",
+      "party": "Democrat",
+      "url": "https://www.hirono.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Chuck Grassley",
+      "state": "IA",
+      "party": "Republican",
+      "url": "https://www.grassley.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Joni Ernst",
+      "state": "IA",
+      "party": "Republican",
+      "url": "https://www.ernst.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "James E. Risch",
+      "state": "ID",
+      "party": "Republican",
+      "url": "https://www.risch.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Mike Crapo",
+      "state": "ID",
+      "party": "Republican",
+      "url": "https://www.crapo.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Richard J. Durbin",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://www.durbin.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Tammy Duckworth",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://www.duckworth.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Jim Banks",
+      "state": "IN",
+      "party": "Republican",
+      "url": "https://www.banks.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Todd Young",
+      "state": "IN",
+      "party": "Republican",
+      "url": "https://www.young.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Jerry Moran",
+      "state": "KS",
+      "party": "Republican",
+      "url": "https://www.moran.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Roger Marshall",
+      "state": "KS",
+      "party": "Republican",
+      "url": "https://www.marshall.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Mitch McConnell",
+      "state": "KY",
+      "party": "Republican",
+      "url": "https://www.mcconnell.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Rand Paul",
+      "state": "KY",
+      "party": "Republican",
+      "url": "https://www.paul.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Bill Cassidy",
+      "state": "LA",
+      "party": "Republican",
+      "url": "https://www.cassidy.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "John Kennedy",
+      "state": "LA",
+      "party": "Republican",
+      "url": "https://www.kennedy.senate.gov/public",
+      "class": 3
+    },
+    {
+      "name": "Edward J. Markey",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://www.markey.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Elizabeth Warren",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://www.warren.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Angela D. Alsobrooks",
+      "state": "MD",
+      "party": "Democrat",
+      "url": "https://www.alsobrooks.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Chris Van Hollen",
+      "state": "MD",
+      "party": "Democrat",
+      "url": "https://www.vanhollen.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Angus S. King, Jr.",
+      "state": "ME",
+      "party": "Independent",
+      "url": "https://www.king.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Susan M. Collins",
+      "state": "ME",
+      "party": "Republican",
+      "url": "https://www.collins.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Elissa Slotkin",
+      "state": "MI",
+      "party": "Democrat",
+      "url": "https://www.slotkin.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Gary C. Peters",
+      "state": "MI",
+      "party": "Democrat",
+      "url": "https://www.peters.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Amy Klobuchar",
+      "state": "MN",
+      "party": "Democrat",
+      "url": "https://www.klobuchar.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Tina Smith",
+      "state": "MN",
+      "party": "Democrat",
+      "url": "https://www.smith.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Eric Schmitt",
+      "state": "MO",
+      "party": "Republican",
+      "url": "https://www.schmitt.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Josh Hawley",
+      "state": "MO",
+      "party": "Republican",
+      "url": "https://www.hawley.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Cindy Hyde-Smith",
+      "state": "MS",
+      "party": "Republican",
+      "url": "https://www.hydesmith.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Roger F. Wicker",
+      "state": "MS",
+      "party": "Republican",
+      "url": "https://www.wicker.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Steve Daines",
+      "state": "MT",
+      "party": "Republican",
+      "url": "https://www.daines.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Tim Sheehy",
+      "state": "MT",
+      "party": "Republican",
+      "url": "https://www.sheehy.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Ted Budd",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://www.budd.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Thom Tillis",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://www.tillis.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "John Hoeven",
+      "state": "ND",
+      "party": "Republican",
+      "url": "https://www.hoeven.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Kevin Cramer",
+      "state": "ND",
+      "party": "Republican",
+      "url": "https://www.cramer.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Deb Fischer",
+      "state": "NE",
+      "party": "Republican",
+      "url": "https://www.fischer.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Pete Ricketts",
+      "state": "NE",
+      "party": "Republican",
+      "url": "https://www.ricketts.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Jeanne Shaheen",
+      "state": "NH",
+      "party": "Democrat",
+      "url": "https://www.shaheen.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Margaret Wood Hassan",
+      "state": "NH",
+      "party": "Democrat",
+      "url": "https://www.hassan.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Andy Kim",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://www.kim.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Cory A. Booker",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://www.booker.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Ben Ray Luján",
+      "state": "NM",
+      "party": "Democrat",
+      "url": "https://www.lujan.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Martin Heinrich",
+      "state": "NM",
+      "party": "Democrat",
+      "url": "https://www.heinrich.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Catherine Cortez Masto",
+      "state": "NV",
+      "party": "Democrat",
+      "url": "https://www.cortezmasto.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Jacky Rosen",
+      "state": "NV",
+      "party": "Democrat",
+      "url": "https://www.rosen.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Charles E. Schumer",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://www.schumer.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Kirsten E. Gillibrand",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://www.gillibrand.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Bernie Moreno",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://www.moreno.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Jon Husted",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://www.husted.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Alan Armstrong",
+      "state": "OK",
+      "party": "Republican",
+      "url": "https://www.armstrong.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "James Lankford",
+      "state": "OK",
+      "party": "Republican",
+      "url": "https://www.lankford.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Jeff Merkley",
+      "state": "OR",
+      "party": "Democrat",
+      "url": "https://www.merkley.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Ron Wyden",
+      "state": "OR",
+      "party": "Democrat",
+      "url": "https://www.wyden.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "David McCormick",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://www.mccormick.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "John Fetterman",
+      "state": "PA",
+      "party": "Democrat",
+      "url": "https://www.fetterman.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Jack Reed",
+      "state": "RI",
+      "party": "Democrat",
+      "url": "https://www.reed.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Sheldon Whitehouse",
+      "state": "RI",
+      "party": "Democrat",
+      "url": "https://www.whitehouse.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Darline Graham",
+      "state": "SC",
+      "party": "Republican",
+      "url": "https://www.dgraham.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Tim Scott",
+      "state": "SC",
+      "party": "Republican",
+      "url": "https://www.scott.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "John Thune",
+      "state": "SD",
+      "party": "Republican",
+      "url": "https://www.thune.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Mike Rounds",
+      "state": "SD",
+      "party": "Republican",
+      "url": "https://www.rounds.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Bill Hagerty",
+      "state": "TN",
+      "party": "Republican",
+      "url": "https://www.hagerty.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Marsha Blackburn",
+      "state": "TN",
+      "party": "Republican",
+      "url": "https://www.blackburn.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "John Cornyn",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://www.cornyn.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Ted Cruz",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://www.cruz.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "John R. Curtis",
+      "state": "UT",
+      "party": "Republican",
+      "url": "https://www.curtis.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Mike Lee",
+      "state": "UT",
+      "party": "Republican",
+      "url": "https://www.lee.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Mark R. Warner",
+      "state": "VA",
+      "party": "Democrat",
+      "url": "https://www.warner.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Tim Kaine",
+      "state": "VA",
+      "party": "Democrat",
+      "url": "https://www.kaine.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Bernard Sanders",
+      "state": "VT",
+      "party": "Independent",
+      "url": "https://www.sanders.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Peter Welch",
+      "state": "VT",
+      "party": "Democrat",
+      "url": "https://www.welch.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Maria Cantwell",
+      "state": "WA",
+      "party": "Democrat",
+      "url": "https://www.cantwell.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Patty Murray",
+      "state": "WA",
+      "party": "Democrat",
+      "url": "https://www.murray.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Ron Johnson",
+      "state": "WI",
+      "party": "Republican",
+      "url": "https://www.ronjohnson.senate.gov",
+      "class": 3
+    },
+    {
+      "name": "Tammy Baldwin",
+      "state": "WI",
+      "party": "Democrat",
+      "url": "https://www.baldwin.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "James C. Justice",
+      "state": "WV",
+      "party": "Republican",
+      "url": "https://www.justice.senate.gov",
+      "class": 1
+    },
+    {
+      "name": "Shelley Moore Capito",
+      "state": "WV",
+      "party": "Republican",
+      "url": "https://www.capito.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "Cynthia M. Lummis",
+      "state": "WY",
+      "party": "Republican",
+      "url": "https://www.lummis.senate.gov",
+      "class": 2
+    },
+    {
+      "name": "John Barrasso",
+      "state": "WY",
+      "party": "Republican",
+      "url": "https://www.barrasso.senate.gov",
+      "class": 1
+    }
+  ],
+  "representatives": [
+    {
+      "name": "Nicholas J. Begich III",
+      "state": "AK",
+      "party": "Republican",
+      "url": "https://begich.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "Barry Moore",
+      "state": "AL",
+      "party": "Republican",
+      "url": "https://barrymoore.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Shomari Figures",
+      "state": "AL",
+      "party": "Democrat",
+      "url": "https://figures.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Mike Rogers",
+      "state": "AL",
+      "party": "Republican",
+      "url": "https://mikerogers.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Robert B. Aderholt",
+      "state": "AL",
+      "party": "Republican",
+      "url": "https://aderholt.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Dale W. Strong",
+      "state": "AL",
+      "party": "Republican",
+      "url": "https://strong.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Gary J. Palmer",
+      "state": "AL",
+      "party": "Republican",
+      "url": "https://palmer.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Terri A. Sewell",
+      "state": "AL",
+      "party": "Democrat",
+      "url": "https://sewell.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Eric A. \"Rick\" Crawford",
+      "state": "AR",
+      "party": "Republican",
+      "url": "https://crawford.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "J. French Hill",
+      "state": "AR",
+      "party": "Republican",
+      "url": "https://hill.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Steve Womack",
+      "state": "AR",
+      "party": "Republican",
+      "url": "https://womack.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Bruce Westerman",
+      "state": "AR",
+      "party": "Republican",
+      "url": "https://westerman.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Aumua Amata Coleman Radewagen",
+      "state": "AS",
+      "party": "Republican",
+      "url": "https://radewagen.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "David Schweikert",
+      "state": "AZ",
+      "party": "Republican",
+      "url": "https://schweikert.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Elijah Crane",
+      "state": "AZ",
+      "party": "Republican",
+      "url": "https://crane.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Yassamin Ansari",
+      "state": "AZ",
+      "party": "Democrat",
+      "url": "https://ansari.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Greg Stanton",
+      "state": "AZ",
+      "party": "Democrat",
+      "url": "https://stanton.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Andy Biggs",
+      "state": "AZ",
+      "party": "Republican",
+      "url": "https://biggs.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Juan Ciscomani",
+      "state": "AZ",
+      "party": "Republican",
+      "url": "https://ciscomani.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Adelita S. Grijalva",
+      "state": "AZ",
+      "party": "Democrat",
+      "url": "https://grijalva.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Abraham J. Hamadeh",
+      "state": "AZ",
+      "party": "Republican",
+      "url": "https://hamadeh.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Paul A. Gosar",
+      "state": "AZ",
+      "party": "Republican",
+      "url": "https://gosar.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "James Gallagher",
+      "state": "CA",
+      "party": "Republican",
+      "url": null,
+      "district": "1"
+    },
+    {
+      "name": "Mark DeSaulnier",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://desaulnier.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Nancy Pelosi",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://pelosi.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Lateefah Simon",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://simon.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "Adam Gray",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://gray.house.gov",
+      "district": "13"
+    },
+    {
+      "name": "Aisha Wahab",
+      "state": "CA",
+      "party": "Democrat",
+      "url": null,
+      "district": "14"
+    },
+    {
+      "name": "Kevin Mullin",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://kevinmullin.house.gov",
+      "district": "15"
+    },
+    {
+      "name": "Sam T. Liccardo",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://liccardo.house.gov",
+      "district": "16"
+    },
+    {
+      "name": "Ro Khanna",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://khanna.house.gov",
+      "district": "17"
+    },
+    {
+      "name": "Zoe Lofgren",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://lofgren.house.gov",
+      "district": "18"
+    },
+    {
+      "name": "Jimmy Panetta",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://panetta.house.gov",
+      "district": "19"
+    },
+    {
+      "name": "Jared Huffman",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://huffman.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Vince Fong",
+      "state": "CA",
+      "party": "Republican",
+      "url": "https://fong.house.gov",
+      "district": "20"
+    },
+    {
+      "name": "Jim Costa",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://costa.house.gov",
+      "district": "21"
+    },
+    {
+      "name": "David G. Valadao",
+      "state": "CA",
+      "party": "Republican",
+      "url": "https://valadao.house.gov",
+      "district": "22"
+    },
+    {
+      "name": "Jay Obernolte",
+      "state": "CA",
+      "party": "Republican",
+      "url": "https://obernolte.house.gov",
+      "district": "23"
+    },
+    {
+      "name": "Salud O. Carbajal",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://carbajal.house.gov",
+      "district": "24"
+    },
+    {
+      "name": "Raul Ruiz",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://ruiz.house.gov",
+      "district": "25"
+    },
+    {
+      "name": "Julia Brownley",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://juliabrownley.house.gov",
+      "district": "26"
+    },
+    {
+      "name": "George Whitesides",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://whitesides.house.gov",
+      "district": "27"
+    },
+    {
+      "name": "Judy Chu",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://chu.house.gov",
+      "district": "28"
+    },
+    {
+      "name": "Luz M. Rivas",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://rivas.house.gov",
+      "district": "29"
+    },
+    {
+      "name": "Kevin Kiley",
+      "state": "CA",
+      "party": "Independent",
+      "url": "https://kiley.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Laura Friedman",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://friedman.house.gov",
+      "district": "30"
+    },
+    {
+      "name": "Gilbert Ray Cisneros, Jr.",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://cisneros.house.gov",
+      "district": "31"
+    },
+    {
+      "name": "Brad Sherman",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://sherman.house.gov",
+      "district": "32"
+    },
+    {
+      "name": "Pete Aguilar",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://aguilar.house.gov",
+      "district": "33"
+    },
+    {
+      "name": "Jimmy Gomez",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://gomez.house.gov",
+      "district": "34"
+    },
+    {
+      "name": "Norma J. Torres",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://torres.house.gov",
+      "district": "35"
+    },
+    {
+      "name": "Ted Lieu",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://lieu.house.gov",
+      "district": "36"
+    },
+    {
+      "name": "Sydney Kamlager-Dove",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://kamlager-dove.house.gov",
+      "district": "37"
+    },
+    {
+      "name": "Linda T. Sánchez",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://lindasanchez.house.gov",
+      "district": "38"
+    },
+    {
+      "name": "Mark Takano",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://takano.house.gov",
+      "district": "39"
+    },
+    {
+      "name": "Mike Thompson",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://mikethompson.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Young Kim",
+      "state": "CA",
+      "party": "Republican",
+      "url": "https://youngkim.house.gov",
+      "district": "40"
+    },
+    {
+      "name": "Ken Calvert",
+      "state": "CA",
+      "party": "Republican",
+      "url": "https://calvert.house.gov",
+      "district": "41"
+    },
+    {
+      "name": "Robert Garcia",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://robertgarcia.house.gov",
+      "district": "42"
+    },
+    {
+      "name": "Maxine Waters",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://waters.house.gov",
+      "district": "43"
+    },
+    {
+      "name": "Nanette Diaz Barragán",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://barragan.house.gov",
+      "district": "44"
+    },
+    {
+      "name": "Derek Tran",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://tran.house.gov",
+      "district": "45"
+    },
+    {
+      "name": "J. Luis Correa",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://correa.house.gov",
+      "district": "46"
+    },
+    {
+      "name": "Dave Min",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://min.house.gov",
+      "district": "47"
+    },
+    {
+      "name": "Darrell Issa",
+      "state": "CA",
+      "party": "Republican",
+      "url": "https://issa.house.gov",
+      "district": "48"
+    },
+    {
+      "name": "Mike Levin",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://levin.house.gov",
+      "district": "49"
+    },
+    {
+      "name": "Tom McClintock",
+      "state": "CA",
+      "party": "Republican",
+      "url": "https://mcclintock.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Scott H. Peters",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://scottpeters.house.gov",
+      "district": "50"
+    },
+    {
+      "name": "Sara Jacobs",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://sarajacobs.house.gov",
+      "district": "51"
+    },
+    {
+      "name": "Juan Vargas",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://vargas.house.gov",
+      "district": "52"
+    },
+    {
+      "name": "Ami Bera",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://bera.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Doris O. Matsui",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://matsui.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "John Garamendi",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://garamendi.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Josh Harder",
+      "state": "CA",
+      "party": "Democrat",
+      "url": "https://harder.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Diana DeGette",
+      "state": "CO",
+      "party": "Democrat",
+      "url": "https://degette.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Joe Neguse",
+      "state": "CO",
+      "party": "Democrat",
+      "url": "https://neguse.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Jeff Hurd",
+      "state": "CO",
+      "party": "Republican",
+      "url": "https://hurd.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Lauren Boebert",
+      "state": "CO",
+      "party": "Republican",
+      "url": "https://boebert.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Jeff Crank",
+      "state": "CO",
+      "party": "Republican",
+      "url": "https://crank.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Jason Crow",
+      "state": "CO",
+      "party": "Democrat",
+      "url": "https://crow.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Brittany Pettersen",
+      "state": "CO",
+      "party": "Democrat",
+      "url": "https://pettersen.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Gabe Evans",
+      "state": "CO",
+      "party": "Republican",
+      "url": "https://gabeevans.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "John B. Larson",
+      "state": "CT",
+      "party": "Democrat",
+      "url": "https://larson.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Joe Courtney",
+      "state": "CT",
+      "party": "Democrat",
+      "url": "https://courtney.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Rosa L. DeLauro",
+      "state": "CT",
+      "party": "Democrat",
+      "url": "https://delauro.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "James A. Himes",
+      "state": "CT",
+      "party": "Democrat",
+      "url": "https://himes.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Jahana Hayes",
+      "state": "CT",
+      "party": "Democrat",
+      "url": "https://hayes.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Eleanor Holmes Norton",
+      "state": "DC",
+      "party": "Democrat",
+      "url": "https://norton.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "Sarah McBride",
+      "state": "DE",
+      "party": "Democrat",
+      "url": "https://mcbride.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "Jimmy Patronis",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://patronis.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Maxwell Frost",
+      "state": "FL",
+      "party": "Democrat",
+      "url": "https://frost.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Daniel Webster",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://webster.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Gus M. Bilirakis",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://bilirakis.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "Anna Paulina Luna",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://luna.house.gov",
+      "district": "13"
+    },
+    {
+      "name": "Kathy Castor",
+      "state": "FL",
+      "party": "Democrat",
+      "url": "https://castor.house.gov",
+      "district": "14"
+    },
+    {
+      "name": "Laurel M. Lee",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://laurellee.house.gov",
+      "district": "15"
+    },
+    {
+      "name": "Vern Buchanan",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://buchanan.house.gov",
+      "district": "16"
+    },
+    {
+      "name": "W. Gregory Steube",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://steube.house.gov",
+      "district": "17"
+    },
+    {
+      "name": "Scott Franklin",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://franklin.house.gov",
+      "district": "18"
+    },
+    {
+      "name": "Byron Donalds",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://donalds.house.gov",
+      "district": "19"
+    },
+    {
+      "name": "Neal P. Dunn",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://dunn.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Brian J. Mast",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://mast.house.gov",
+      "district": "21"
+    },
+    {
+      "name": "Lois Frankel",
+      "state": "FL",
+      "party": "Democrat",
+      "url": "https://frankel.house.gov",
+      "district": "22"
+    },
+    {
+      "name": "Jared Moskowitz",
+      "state": "FL",
+      "party": "Democrat",
+      "url": "https://moskowitz.house.gov",
+      "district": "23"
+    },
+    {
+      "name": "Frederica S. Wilson",
+      "state": "FL",
+      "party": "Democrat",
+      "url": "https://wilson.house.gov",
+      "district": "24"
+    },
+    {
+      "name": "Debbie Wasserman Schultz",
+      "state": "FL",
+      "party": "Democrat",
+      "url": "https://wassermanschultz.house.gov",
+      "district": "25"
+    },
+    {
+      "name": "Mario Diaz-Balart",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://mariodiazbalart.house.gov",
+      "district": "26"
+    },
+    {
+      "name": "Maria Elvira Salazar",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://salazar.house.gov",
+      "district": "27"
+    },
+    {
+      "name": "Carlos A. Gimenez",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://gimenez.house.gov",
+      "district": "28"
+    },
+    {
+      "name": "Kat Cammack",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://cammack.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Aaron Bean",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://bean.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "John H. Rutherford",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://rutherford.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Randy Fine",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://fine.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Cory Mills",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://mills.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Mike Haridopolos",
+      "state": "FL",
+      "party": "Republican",
+      "url": "https://haridopolos.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Darren Soto",
+      "state": "FL",
+      "party": "Democrat",
+      "url": "https://soto.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Earl L. \"Buddy\" Carter",
+      "state": "GA",
+      "party": "Republican",
+      "url": "https://buddycarter.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Mike Collins",
+      "state": "GA",
+      "party": "Republican",
+      "url": "https://collins.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Barry Loudermilk",
+      "state": "GA",
+      "party": "Republican",
+      "url": "https://loudermilk.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Rick W. Allen",
+      "state": "GA",
+      "party": "Republican",
+      "url": "https://allen.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "Everton Blair Jr.",
+      "state": "GA",
+      "party": "Democrat",
+      "url": null,
+      "district": "13"
+    },
+    {
+      "name": "Clay Fuller",
+      "state": "GA",
+      "party": "Republican",
+      "url": "https://fuller.house.gov",
+      "district": "14"
+    },
+    {
+      "name": "Sanford D. Bishop, Jr.",
+      "state": "GA",
+      "party": "Democrat",
+      "url": "https://bishop.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Brian Jack",
+      "state": "GA",
+      "party": "Republican",
+      "url": "https://jack.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Henry C. \"Hank\" Johnson, Jr.",
+      "state": "GA",
+      "party": "Democrat",
+      "url": "https://hankjohnson.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Nikema Williams",
+      "state": "GA",
+      "party": "Democrat",
+      "url": "https://nikemawilliams.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Lucy McBath",
+      "state": "GA",
+      "party": "Democrat",
+      "url": "https://mcbath.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Richard McCormick",
+      "state": "GA",
+      "party": "Republican",
+      "url": "https://mccormick.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Austin Scott",
+      "state": "GA",
+      "party": "Republican",
+      "url": "https://austinscott.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Andrew S. Clyde",
+      "state": "GA",
+      "party": "Republican",
+      "url": "https://clyde.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "James C. Moylan",
+      "state": "GU",
+      "party": "Republican",
+      "url": "https://moylan.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "Ed Case",
+      "state": "HI",
+      "party": "Democrat",
+      "url": "https://case.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Jill N. Tokuda",
+      "state": "HI",
+      "party": "Democrat",
+      "url": "https://tokuda.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Mariannette Miller-Meeks",
+      "state": "IA",
+      "party": "Republican",
+      "url": "https://millermeeks.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Ashley Hinson",
+      "state": "IA",
+      "party": "Republican",
+      "url": "https://hinson.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Zachary Nunn",
+      "state": "IA",
+      "party": "Republican",
+      "url": "https://nunn.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Randy Feenstra",
+      "state": "IA",
+      "party": "Republican",
+      "url": "https://feenstra.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Russ Fulcher",
+      "state": "ID",
+      "party": "Republican",
+      "url": "https://fulcher.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Michael K. Simpson",
+      "state": "ID",
+      "party": "Republican",
+      "url": "https://simpson.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Jonathan L. Jackson",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://jonathanjackson.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Bradley Scott Schneider",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://schneider.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Bill Foster",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://foster.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Mike Bost",
+      "state": "IL",
+      "party": "Republican",
+      "url": "https://bost.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "Nikki Budzinski",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://budzinski.house.gov",
+      "district": "13"
+    },
+    {
+      "name": "Lauren Underwood",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://underwood.house.gov",
+      "district": "14"
+    },
+    {
+      "name": "Mary E. Miller",
+      "state": "IL",
+      "party": "Republican",
+      "url": "https://marymiller.house.gov",
+      "district": "15"
+    },
+    {
+      "name": "Darin LaHood",
+      "state": "IL",
+      "party": "Republican",
+      "url": "https://lahood.house.gov",
+      "district": "16"
+    },
+    {
+      "name": "Eric Sorensen",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://sorensen.house.gov",
+      "district": "17"
+    },
+    {
+      "name": "Robin L. Kelly",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://robinkelly.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Delia C. Ramirez",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://ramirez.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Jesús G. \"Chuy\" García",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://chuygarcia.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Mike Quigley",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://quigley.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Sean Casten",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://casten.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Danny K. Davis",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://davis.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Raja Krishnamoorthi",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://krishnamoorthi.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Janice D. Schakowsky",
+      "state": "IL",
+      "party": "Democrat",
+      "url": "https://schakowsky.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Frank J. Mrvan",
+      "state": "IN",
+      "party": "Democrat",
+      "url": "https://mrvan.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Rudy Yakym III",
+      "state": "IN",
+      "party": "Republican",
+      "url": "https://yakym.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Marlin A. Stutzman",
+      "state": "IN",
+      "party": "Republican",
+      "url": "https://stutzman.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "James R. Baird",
+      "state": "IN",
+      "party": "Republican",
+      "url": "https://baird.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Victoria Spartz",
+      "state": "IN",
+      "party": "Republican",
+      "url": "https://spartz.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Jefferson Shreve",
+      "state": "IN",
+      "party": "Republican",
+      "url": "https://shreve.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "André Carson",
+      "state": "IN",
+      "party": "Democrat",
+      "url": "https://carson.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Mark B. Messmer",
+      "state": "IN",
+      "party": "Republican",
+      "url": "https://messmer.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Erin Houchin",
+      "state": "IN",
+      "party": "Republican",
+      "url": "https://houchin.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Tracey Mann",
+      "state": "KS",
+      "party": "Republican",
+      "url": "https://mann.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Derek Schmidt",
+      "state": "KS",
+      "party": "Republican",
+      "url": "https://schmidt.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Sharice Davids",
+      "state": "KS",
+      "party": "Democrat",
+      "url": "https://davids.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Ron Estes",
+      "state": "KS",
+      "party": "Republican",
+      "url": "https://estes.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "James Comer",
+      "state": "KY",
+      "party": "Republican",
+      "url": "https://comer.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Brett Guthrie",
+      "state": "KY",
+      "party": "Republican",
+      "url": "https://guthrie.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Morgan McGarvey",
+      "state": "KY",
+      "party": "Democrat",
+      "url": "https://mcgarvey.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Thomas Massie",
+      "state": "KY",
+      "party": "Republican",
+      "url": "https://massie.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Harold Rogers",
+      "state": "KY",
+      "party": "Republican",
+      "url": "https://halrogers.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Andy Barr",
+      "state": "KY",
+      "party": "Republican",
+      "url": "https://barr.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Steve Scalise",
+      "state": "LA",
+      "party": "Republican",
+      "url": "https://scalise.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Troy A. Carter",
+      "state": "LA",
+      "party": "Democrat",
+      "url": "https://troycarter.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Clay Higgins",
+      "state": "LA",
+      "party": "Republican",
+      "url": "https://clayhiggins.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Mike Johnson",
+      "state": "LA",
+      "party": "Republican",
+      "url": "https://mikejohnson.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Julia Letlow",
+      "state": "LA",
+      "party": "Republican",
+      "url": "https://letlow.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Cleo Fields",
+      "state": "LA",
+      "party": "Democrat",
+      "url": "https://fields.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Richard E. Neal",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://neal.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "James P. McGovern",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://mcgovern.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Lori Trahan",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://trahan.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Jake Auchincloss",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://auchincloss.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Katherine M. Clark",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://katherineclark.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Seth Moulton",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://moulton.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Ayanna Pressley",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://pressley.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Stephen F. Lynch",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://lynch.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "William R. Keating",
+      "state": "MA",
+      "party": "Democrat",
+      "url": "https://keating.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Andy Harris",
+      "state": "MD",
+      "party": "Republican",
+      "url": "https://harris.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Johnny Olszewski, Jr.",
+      "state": "MD",
+      "party": "Democrat",
+      "url": "https://olszewski.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Sarah Elfreth",
+      "state": "MD",
+      "party": "Democrat",
+      "url": "https://elfreth.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Glenn Ivey",
+      "state": "MD",
+      "party": "Democrat",
+      "url": "https://ivey.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Steny H. Hoyer",
+      "state": "MD",
+      "party": "Democrat",
+      "url": "https://hoyer.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "April McClain Delaney",
+      "state": "MD",
+      "party": "Democrat",
+      "url": "https://mcclaindelaney.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Kweisi Mfume",
+      "state": "MD",
+      "party": "Democrat",
+      "url": "https://mfume.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Jamie Raskin",
+      "state": "MD",
+      "party": "Democrat",
+      "url": "https://raskin.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Chellie Pingree",
+      "state": "ME",
+      "party": "Democrat",
+      "url": "https://pingree.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Jared F. Golden",
+      "state": "ME",
+      "party": "Democrat",
+      "url": "https://golden.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Jack Bergman",
+      "state": "MI",
+      "party": "Republican",
+      "url": "https://bergman.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "John James",
+      "state": "MI",
+      "party": "Republican",
+      "url": "https://james.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Haley M. Stevens",
+      "state": "MI",
+      "party": "Democrat",
+      "url": "https://stevens.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Rashida Tlaib",
+      "state": "MI",
+      "party": "Democrat",
+      "url": "https://tlaib.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "Shri Thanedar",
+      "state": "MI",
+      "party": "Democrat",
+      "url": "https://thanedar.house.gov",
+      "district": "13"
+    },
+    {
+      "name": "John R. Moolenaar",
+      "state": "MI",
+      "party": "Republican",
+      "url": "https://moolenaar.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Hillary J. Scholten",
+      "state": "MI",
+      "party": "Democrat",
+      "url": "https://scholten.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Bill Huizenga",
+      "state": "MI",
+      "party": "Republican",
+      "url": "https://huizenga.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Tim Walberg",
+      "state": "MI",
+      "party": "Republican",
+      "url": "https://walberg.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Debbie Dingell",
+      "state": "MI",
+      "party": "Democrat",
+      "url": "https://debbiedingell.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Tom Barrett",
+      "state": "MI",
+      "party": "Republican",
+      "url": "https://barrett.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Kristen McDonald Rivet",
+      "state": "MI",
+      "party": "Democrat",
+      "url": "https://mcdonaldrivet.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Lisa C. McClain",
+      "state": "MI",
+      "party": "Republican",
+      "url": "https://mcclain.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Brad Finstad",
+      "state": "MN",
+      "party": "Republican",
+      "url": "https://finstad.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Angie Craig",
+      "state": "MN",
+      "party": "Democrat",
+      "url": "https://craig.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Kelly Morrison",
+      "state": "MN",
+      "party": "Democrat",
+      "url": "https://morrison.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Betty McCollum",
+      "state": "MN",
+      "party": "Democrat",
+      "url": "https://mccollum.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Ilhan Omar",
+      "state": "MN",
+      "party": "Democrat",
+      "url": "https://omar.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Tom Emmer",
+      "state": "MN",
+      "party": "Republican",
+      "url": "https://emmer.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Michelle Fischbach",
+      "state": "MN",
+      "party": "Republican",
+      "url": "https://fischbach.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Pete Stauber",
+      "state": "MN",
+      "party": "Republican",
+      "url": "https://stauber.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Wesley Bell",
+      "state": "MO",
+      "party": "Democrat",
+      "url": "https://bell.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Ann Wagner",
+      "state": "MO",
+      "party": "Republican",
+      "url": "https://wagner.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Robert F. Onder, Jr.",
+      "state": "MO",
+      "party": "Republican",
+      "url": "https://onder.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Mark Alford",
+      "state": "MO",
+      "party": "Republican",
+      "url": "https://alford.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Emanuel Cleaver",
+      "state": "MO",
+      "party": "Democrat",
+      "url": "https://cleaver.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Sam Graves",
+      "state": "MO",
+      "party": "Republican",
+      "url": "https://graves.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Eric Burlison",
+      "state": "MO",
+      "party": "Republican",
+      "url": "https://burlison.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Jason Smith",
+      "state": "MO",
+      "party": "Republican",
+      "url": "https://jasonsmith.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Kimberlyn King-Hinds",
+      "state": "MP",
+      "party": "Republican",
+      "url": "https://king-hinds.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "Trent Kelly",
+      "state": "MS",
+      "party": "Republican",
+      "url": "https://trentkelly.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Bennie G. Thompson",
+      "state": "MS",
+      "party": "Democrat",
+      "url": "https://benniethompson.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Michael Guest",
+      "state": "MS",
+      "party": "Republican",
+      "url": "https://guest.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Mike Ezell",
+      "state": "MS",
+      "party": "Republican",
+      "url": "https://ezell.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Ryan K. Zinke",
+      "state": "MT",
+      "party": "Republican",
+      "url": "https://zinke.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Troy Downing",
+      "state": "MT",
+      "party": "Republican",
+      "url": "https://downing.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Donald G. Davis",
+      "state": "NC",
+      "party": "Democrat",
+      "url": "https://dondavis.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Pat Harrigan",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://harrigan.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Chuck Edwards",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://edwards.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Alma S. Adams",
+      "state": "NC",
+      "party": "Democrat",
+      "url": "https://adams.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "Brad Knott",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://knott.house.gov",
+      "district": "13"
+    },
+    {
+      "name": "Tim Moore",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://timmoore.house.gov",
+      "district": "14"
+    },
+    {
+      "name": "Deborah K. Ross",
+      "state": "NC",
+      "party": "Democrat",
+      "url": "https://ross.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Gregory F. Murphy",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://murphy.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Valerie P. Foushee",
+      "state": "NC",
+      "party": "Democrat",
+      "url": "https://foushee.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Virginia Foxx",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://foxx.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Addison P. McDowell",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://mcdowell.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "David Rouzer",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://rouzer.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Mark Harris",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://markharris.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Richard Hudson",
+      "state": "NC",
+      "party": "Republican",
+      "url": "https://hudson.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Julie Fedorchak",
+      "state": "ND",
+      "party": "Republican",
+      "url": "https://fedorchak.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "Mike Flood",
+      "state": "NE",
+      "party": "Republican",
+      "url": "https://flood.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Don Bacon",
+      "state": "NE",
+      "party": "Republican",
+      "url": "https://bacon.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Adrian Smith",
+      "state": "NE",
+      "party": "Republican",
+      "url": "https://adriansmith.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Chris Pappas",
+      "state": "NH",
+      "party": "Democrat",
+      "url": "https://pappas.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Maggie Goodlander",
+      "state": "NH",
+      "party": "Democrat",
+      "url": "https://goodlander.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Donald Norcross",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://norcross.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "LaMonica McIver",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://mciver.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Analilia Mejia",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://mejia.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Bonnie Watson Coleman",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://watsoncoleman.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "Jefferson Van Drew",
+      "state": "NJ",
+      "party": "Republican",
+      "url": "https://vandrew.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Herbert C. Conaway, Jr.",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://conaway.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Christopher H. Smith",
+      "state": "NJ",
+      "party": "Republican",
+      "url": "https://chrissmith.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Josh Gottheimer",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://gottheimer.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Frank Pallone, Jr.",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://pallone.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Thomas H. Kean, Jr.",
+      "state": "NJ",
+      "party": "Republican",
+      "url": "https://kean.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Robert Menendez",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://menendez.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Nellie Pou",
+      "state": "NJ",
+      "party": "Democrat",
+      "url": "https://pou.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Melanie A. Stansbury",
+      "state": "NM",
+      "party": "Democrat",
+      "url": "https://stansbury.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Gabe Vasquez",
+      "state": "NM",
+      "party": "Democrat",
+      "url": "https://vasquez.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Teresa Leger Fernandez",
+      "state": "NM",
+      "party": "Democrat",
+      "url": "https://fernandez.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Dina Titus",
+      "state": "NV",
+      "party": "Democrat",
+      "url": "https://titus.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Mark E. Amodei",
+      "state": "NV",
+      "party": "Republican",
+      "url": "https://amodei.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Susie Lee",
+      "state": "NV",
+      "party": "Democrat",
+      "url": "https://susielee.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Steven Horsford",
+      "state": "NV",
+      "party": "Democrat",
+      "url": "https://horsford.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Nick LaLota",
+      "state": "NY",
+      "party": "Republican",
+      "url": "https://lalota.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Daniel S. Goldman",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://goldman.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Nicole Malliotakis",
+      "state": "NY",
+      "party": "Republican",
+      "url": "https://malliotakis.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Jerrold Nadler",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://nadler.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "Adriano Espaillat",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://espaillat.house.gov",
+      "district": "13"
+    },
+    {
+      "name": "Alexandria Ocasio-Cortez",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://ocasio-cortez.house.gov",
+      "district": "14"
+    },
+    {
+      "name": "Ritchie Torres",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://ritchietorres.house.gov",
+      "district": "15"
+    },
+    {
+      "name": "George Latimer",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://latimer.house.gov",
+      "district": "16"
+    },
+    {
+      "name": "Michael Lawler",
+      "state": "NY",
+      "party": "Republican",
+      "url": "https://lawler.house.gov",
+      "district": "17"
+    },
+    {
+      "name": "Patrick Ryan",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://patryan.house.gov",
+      "district": "18"
+    },
+    {
+      "name": "Josh Riley",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://riley.house.gov",
+      "district": "19"
+    },
+    {
+      "name": "Andrew R. Garbarino",
+      "state": "NY",
+      "party": "Republican",
+      "url": "https://garbarino.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Paul Tonko",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://tonko.house.gov",
+      "district": "20"
+    },
+    {
+      "name": "Elise M. Stefanik",
+      "state": "NY",
+      "party": "Republican",
+      "url": "https://stefanik.house.gov",
+      "district": "21"
+    },
+    {
+      "name": "John W. Mannion",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://mannion.house.gov",
+      "district": "22"
+    },
+    {
+      "name": "Nicholas A. Langworthy",
+      "state": "NY",
+      "party": "Republican",
+      "url": "https://langworthy.house.gov",
+      "district": "23"
+    },
+    {
+      "name": "Claudia Tenney",
+      "state": "NY",
+      "party": "Republican",
+      "url": "https://tenney.house.gov",
+      "district": "24"
+    },
+    {
+      "name": "Joseph D. Morelle",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://morelle.house.gov",
+      "district": "25"
+    },
+    {
+      "name": "Timothy M. Kennedy",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://kennedy.house.gov",
+      "district": "26"
+    },
+    {
+      "name": "Thomas R. Suozzi",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://suozzi.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Laura Gillen",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://gillen.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Gregory W. Meeks",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://meeks.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Grace Meng",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://meng.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Nydia M. Velázquez",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://velazquez.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Hakeem S. Jeffries",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://jeffries.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Yvette D. Clarke",
+      "state": "NY",
+      "party": "Democrat",
+      "url": "https://clarke.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Greg Landsman",
+      "state": "OH",
+      "party": "Democrat",
+      "url": "https://landsman.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Michael R. Turner",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://turner.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Shontel M. Brown",
+      "state": "OH",
+      "party": "Democrat",
+      "url": "https://shontelbrown.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Troy Balderson",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://balderson.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "Emilia Strong Sykes",
+      "state": "OH",
+      "party": "Democrat",
+      "url": "https://sykes.house.gov",
+      "district": "13"
+    },
+    {
+      "name": "David P. Joyce",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://joyce.house.gov",
+      "district": "14"
+    },
+    {
+      "name": "Mike Carey",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://carey.house.gov",
+      "district": "15"
+    },
+    {
+      "name": "David J. Taylor",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://taylor.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Joyce Beatty",
+      "state": "OH",
+      "party": "Democrat",
+      "url": "https://beatty.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Jim Jordan",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://jordan.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Robert E. Latta",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://latta.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Michael A. Rulli",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://rulli.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Max L. Miller",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://maxmiller.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Warren Davidson",
+      "state": "OH",
+      "party": "Republican",
+      "url": "https://davidson.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Marcy Kaptur",
+      "state": "OH",
+      "party": "Democrat",
+      "url": "https://kaptur.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Kevin Hern",
+      "state": "OK",
+      "party": "Republican",
+      "url": "https://hern.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Josh Brecheen",
+      "state": "OK",
+      "party": "Republican",
+      "url": "https://brecheen.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Frank D. Lucas",
+      "state": "OK",
+      "party": "Republican",
+      "url": "https://lucas.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Tom Cole",
+      "state": "OK",
+      "party": "Republican",
+      "url": "https://cole.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Stephanie I. Bice",
+      "state": "OK",
+      "party": "Republican",
+      "url": "https://bice.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Suzanne Bonamici",
+      "state": "OR",
+      "party": "Democrat",
+      "url": "https://bonamici.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Cliff Bentz",
+      "state": "OR",
+      "party": "Republican",
+      "url": "https://bentz.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Maxine Dexter",
+      "state": "OR",
+      "party": "Democrat",
+      "url": "https://dexter.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Val T. Hoyle",
+      "state": "OR",
+      "party": "Democrat",
+      "url": "https://hoyle.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Janelle S. Bynum",
+      "state": "OR",
+      "party": "Democrat",
+      "url": "https://bynum.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Andrea Salinas",
+      "state": "OR",
+      "party": "Democrat",
+      "url": "https://salinas.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Brian K. Fitzpatrick",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://fitzpatrick.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Scott Perry",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://perry.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Lloyd Smucker",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://smucker.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Summer L. Lee",
+      "state": "PA",
+      "party": "Democrat",
+      "url": "https://summerlee.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "John Joyce",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://johnjoyce.house.gov",
+      "district": "13"
+    },
+    {
+      "name": "Guy Reschenthaler",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://reschenthaler.house.gov",
+      "district": "14"
+    },
+    {
+      "name": "Glenn Thompson",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://thompson.house.gov",
+      "district": "15"
+    },
+    {
+      "name": "Mike Kelly",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://kelly.house.gov",
+      "district": "16"
+    },
+    {
+      "name": "Christopher R. Deluzio",
+      "state": "PA",
+      "party": "Democrat",
+      "url": "https://deluzio.house.gov",
+      "district": "17"
+    },
+    {
+      "name": "Brendan F. Boyle",
+      "state": "PA",
+      "party": "Democrat",
+      "url": "https://boyle.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Dwight Evans",
+      "state": "PA",
+      "party": "Democrat",
+      "url": "https://evans.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Madeleine Dean",
+      "state": "PA",
+      "party": "Democrat",
+      "url": "https://dean.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Mary Gay Scanlon",
+      "state": "PA",
+      "party": "Democrat",
+      "url": "https://scanlon.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Chrissy Houlahan",
+      "state": "PA",
+      "party": "Democrat",
+      "url": "https://houlahan.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Ryan Mackenzie",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://mackenzie.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Robert P. Bresnahan, Jr.",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://bresnahan.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Daniel Meuser",
+      "state": "PA",
+      "party": "Republican",
+      "url": "https://meuser.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Pablo José Hernández",
+      "state": "PR",
+      "party": "Democrat",
+      "url": "https://hernandez.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "Gabe Amo",
+      "state": "RI",
+      "party": "Democrat",
+      "url": "https://amo.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Seth Magaziner",
+      "state": "RI",
+      "party": "Democrat",
+      "url": "https://magaziner.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Nancy Mace",
+      "state": "SC",
+      "party": "Republican",
+      "url": "https://mace.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Joe Wilson",
+      "state": "SC",
+      "party": "Republican",
+      "url": "https://joewilson.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Sheri Biggs",
+      "state": "SC",
+      "party": "Republican",
+      "url": "https://sheribiggs.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "William R. Timmons IV",
+      "state": "SC",
+      "party": "Republican",
+      "url": "https://timmons.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Ralph Norman",
+      "state": "SC",
+      "party": "Republican",
+      "url": "https://norman.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "James E. Clyburn",
+      "state": "SC",
+      "party": "Democrat",
+      "url": "https://clyburn.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Russell Fry",
+      "state": "SC",
+      "party": "Republican",
+      "url": "https://fry.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Dusty Johnson",
+      "state": "SD",
+      "party": "Republican",
+      "url": "https://dustyjohnson.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "Diana Harshbarger",
+      "state": "TN",
+      "party": "Republican",
+      "url": "https://harshbarger.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Tim Burchett",
+      "state": "TN",
+      "party": "Republican",
+      "url": "https://burchett.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Charles J. \"Chuck\" Fleischmann",
+      "state": "TN",
+      "party": "Republican",
+      "url": "https://fleischmann.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Scott DesJarlais",
+      "state": "TN",
+      "party": "Republican",
+      "url": "https://desjarlais.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Andrew Ogles",
+      "state": "TN",
+      "party": "Republican",
+      "url": "https://ogles.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "John W. Rose",
+      "state": "TN",
+      "party": "Republican",
+      "url": "https://johnrose.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Matt Van Epps",
+      "state": "TN",
+      "party": "Republican",
+      "url": "https://vanepps.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "David Kustoff",
+      "state": "TN",
+      "party": "Republican",
+      "url": "https://kustoff.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Steve Cohen",
+      "state": "TN",
+      "party": "Democrat",
+      "url": "https://cohen.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Nathaniel Moran",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://moran.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Michael T. McCaul",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://mccaul.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "August Pfluger",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://pfluger.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Craig A. Goldman",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://craiggoldman.house.gov",
+      "district": "12"
+    },
+    {
+      "name": "Ronny Jackson",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://jackson.house.gov",
+      "district": "13"
+    },
+    {
+      "name": "Randy K. Weber, Sr.",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://weber.house.gov",
+      "district": "14"
+    },
+    {
+      "name": "Monica De La Cruz",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://delacruz.house.gov",
+      "district": "15"
+    },
+    {
+      "name": "Veronica Escobar",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://escobar.house.gov",
+      "district": "16"
+    },
+    {
+      "name": "Pete Sessions",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://sessions.house.gov",
+      "district": "17"
+    },
+    {
+      "name": "Christian D. Menefee",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://menefee.house.gov",
+      "district": "18"
+    },
+    {
+      "name": "Jodey C. Arrington",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://arrington.house.gov",
+      "district": "19"
+    },
+    {
+      "name": "Dan Crenshaw",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://crenshaw.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Joaquin Castro",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://castro.house.gov",
+      "district": "20"
+    },
+    {
+      "name": "Chip Roy",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://roy.house.gov",
+      "district": "21"
+    },
+    {
+      "name": "Troy E. Nehls",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://nehls.house.gov",
+      "district": "22"
+    },
+    {
+      "name": "Beth Van Duyne",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://vanduyne.house.gov",
+      "district": "24"
+    },
+    {
+      "name": "Roger Williams",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://williams.house.gov",
+      "district": "25"
+    },
+    {
+      "name": "Brandon Gill",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://gill.house.gov",
+      "district": "26"
+    },
+    {
+      "name": "Michael Cloud",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://cloud.house.gov",
+      "district": "27"
+    },
+    {
+      "name": "Henry Cuellar",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://cuellar.house.gov",
+      "district": "28"
+    },
+    {
+      "name": "Sylvia R. Garcia",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://sylviagarcia.house.gov",
+      "district": "29"
+    },
+    {
+      "name": "Keith Self",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://keithself.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Jasmine Crockett",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://crockett.house.gov",
+      "district": "30"
+    },
+    {
+      "name": "John R. Carter",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://carter.house.gov",
+      "district": "31"
+    },
+    {
+      "name": "Julie Johnson",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://juliejohnson.house.gov",
+      "district": "32"
+    },
+    {
+      "name": "Marc A. Veasey",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://veasey.house.gov",
+      "district": "33"
+    },
+    {
+      "name": "Vicente Gonzalez",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://gonzalez.house.gov",
+      "district": "34"
+    },
+    {
+      "name": "Greg Casar",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://casar.house.gov",
+      "district": "35"
+    },
+    {
+      "name": "Brian Babin",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://babin.house.gov",
+      "district": "36"
+    },
+    {
+      "name": "Lloyd Doggett",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://doggett.house.gov",
+      "district": "37"
+    },
+    {
+      "name": "Wesley Hunt",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://hunt.house.gov",
+      "district": "38"
+    },
+    {
+      "name": "Pat Fallon",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://fallon.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Lance Gooden",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://gooden.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Jake Ellzey",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://ellzey.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Lizzie Fletcher",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://fletcher.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Morgan Luttrell",
+      "state": "TX",
+      "party": "Republican",
+      "url": "https://luttrell.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Al Green",
+      "state": "TX",
+      "party": "Democrat",
+      "url": "https://algreen.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Blake D. Moore",
+      "state": "UT",
+      "party": "Republican",
+      "url": "https://blakemoore.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Celeste Maloy",
+      "state": "UT",
+      "party": "Republican",
+      "url": "https://maloy.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Mike Kennedy",
+      "state": "UT",
+      "party": "Republican",
+      "url": "https://mikekennedy.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Burgess Owens",
+      "state": "UT",
+      "party": "Republican",
+      "url": "https://owens.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Robert J. Wittman",
+      "state": "VA",
+      "party": "Republican",
+      "url": "https://wittman.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Suhas Subramanyam",
+      "state": "VA",
+      "party": "Democrat",
+      "url": "https://subramanyam.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "James R. Walkinshaw",
+      "state": "VA",
+      "party": "Democrat",
+      "url": "https://walkinshaw.house.gov",
+      "district": "11"
+    },
+    {
+      "name": "Jennifer A. Kiggans",
+      "state": "VA",
+      "party": "Republican",
+      "url": "https://kiggans.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Robert C. \"Bobby\" Scott",
+      "state": "VA",
+      "party": "Democrat",
+      "url": "https://bobbyscott.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Jennifer L. McClellan",
+      "state": "VA",
+      "party": "Democrat",
+      "url": "https://mcclellan.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "John J. McGuire III",
+      "state": "VA",
+      "party": "Republican",
+      "url": "https://mcguire.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Ben Cline",
+      "state": "VA",
+      "party": "Republican",
+      "url": "https://cline.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Eugene Simon Vindman",
+      "state": "VA",
+      "party": "Democrat",
+      "url": "https://vindman.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Donald S. Beyer, Jr.",
+      "state": "VA",
+      "party": "Democrat",
+      "url": "https://beyer.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "H. Morgan Griffith",
+      "state": "VA",
+      "party": "Republican",
+      "url": "https://morgangriffith.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Stacey E. Plaskett",
+      "state": "VI",
+      "party": "Democrat",
+      "url": "https://plaskett.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "Becca Balint",
+      "state": "VT",
+      "party": "Democrat",
+      "url": "https://balint.house.gov",
+      "district": "At-Large"
+    },
+    {
+      "name": "Suzan K. DelBene",
+      "state": "WA",
+      "party": "Democrat",
+      "url": "https://delbene.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Marilyn Strickland",
+      "state": "WA",
+      "party": "Democrat",
+      "url": "https://strickland.house.gov",
+      "district": "10"
+    },
+    {
+      "name": "Rick Larsen",
+      "state": "WA",
+      "party": "Democrat",
+      "url": "https://larsen.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Marie Gluesenkamp Perez",
+      "state": "WA",
+      "party": "Democrat",
+      "url": "https://gluesenkampperez.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Dan Newhouse",
+      "state": "WA",
+      "party": "Republican",
+      "url": "https://newhouse.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Michael Baumgartner",
+      "state": "WA",
+      "party": "Republican",
+      "url": "https://baumgartner.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Emily Randall",
+      "state": "WA",
+      "party": "Democrat",
+      "url": "https://randall.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Pramila Jayapal",
+      "state": "WA",
+      "party": "Democrat",
+      "url": "https://jayapal.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Kim Schrier",
+      "state": "WA",
+      "party": "Democrat",
+      "url": "https://schrier.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Adam Smith",
+      "state": "WA",
+      "party": "Democrat",
+      "url": "https://adamsmith.house.gov",
+      "district": "9"
+    },
+    {
+      "name": "Bryan Steil",
+      "state": "WI",
+      "party": "Republican",
+      "url": "https://steil.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Mark Pocan",
+      "state": "WI",
+      "party": "Democrat",
+      "url": "https://pocan.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Derrick Van Orden",
+      "state": "WI",
+      "party": "Republican",
+      "url": "https://vanorden.house.gov",
+      "district": "3"
+    },
+    {
+      "name": "Gwen Moore",
+      "state": "WI",
+      "party": "Democrat",
+      "url": "https://gwenmoore.house.gov",
+      "district": "4"
+    },
+    {
+      "name": "Scott Fitzgerald",
+      "state": "WI",
+      "party": "Republican",
+      "url": "https://fitzgerald.house.gov",
+      "district": "5"
+    },
+    {
+      "name": "Glenn Grothman",
+      "state": "WI",
+      "party": "Republican",
+      "url": "https://grothman.house.gov",
+      "district": "6"
+    },
+    {
+      "name": "Thomas P. Tiffany",
+      "state": "WI",
+      "party": "Republican",
+      "url": "https://tiffany.house.gov",
+      "district": "7"
+    },
+    {
+      "name": "Tony Wied",
+      "state": "WI",
+      "party": "Republican",
+      "url": "https://wied.house.gov",
+      "district": "8"
+    },
+    {
+      "name": "Carol D. Miller",
+      "state": "WV",
+      "party": "Republican",
+      "url": "https://miller.house.gov",
+      "district": "1"
+    },
+    {
+      "name": "Riley M. Moore",
+      "state": "WV",
+      "party": "Republican",
+      "url": "https://rileymoore.house.gov",
+      "district": "2"
+    },
+    {
+      "name": "Harriet M. Hageman",
+      "state": "WY",
+      "party": "Republican",
+      "url": "https://hageman.house.gov",
+      "district": "At-Large"
+    }
+  ]
+}
