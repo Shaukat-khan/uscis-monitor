@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T00:11:24Z",
+  "generated_at": "2026-09-19T00:32:32Z",
   "sources": {
     "civics_pdf": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
     "civics_pdf_sha256": "f280608c0fb6dc1eba344b4746a7ba52d02fe411fba30cedd4371819f0abe11c",
@@ -84,9 +84,7 @@
         "It says America is free from British control.",
         "It says all people are created equal.",
         "It identifies inherent rights.",
-        "It identifies individual freedoms.",
-        "3 of 19",
-        "uscis.gov/citizenship"
+        "It identifies individual freedoms."
       ],
       "senior": false
     },
@@ -161,8 +159,6 @@
         "So one part does not become too powerful",
         "Checks and balances",
         "Separation of powers",
-        "4 of 19",
-        "uscis.gov/citizenship",
         "B: System of Government"
       ],
       "senior": false
@@ -265,9 +261,7 @@
       "number": 27,
       "question": "How many senators does each state have?",
       "answers": [
-        "Two (2)",
-        "5 of 19",
-        "uscis.gov/citizenship"
+        "Two (2)"
       ],
       "senior": false
     },
@@ -293,7 +287,9 @@
     "30": {
       "number": 30,
       "question": "What is the name of the Speaker of the House of Representatives now? *",
-      "answers": [],
+      "answers": [
+        "Mike Johnson"
+      ],
       "senior": true
     },
     "31": {
@@ -363,15 +359,16 @@
       "number": 38,
       "question": "What is the name of the President of the United States now? *",
       "answers": [
-        "6 of 19",
-        "uscis.gov/citizenship"
+        "Donald J. Trump"
       ],
       "senior": true
     },
     "39": {
       "number": 39,
       "question": "What is the name of the Vice President of the United States now? *",
-      "answers": [],
+      "answers": [
+        "JD Vance"
+      ],
       "senior": true
     },
     "40": {
@@ -441,9 +438,7 @@
       "number": 47,
       "question": "What does the President’s Cabinet do?",
       "answers": [
-        "Advises the President (of the United States)",
-        "7 of 19",
-        "uscis.gov/citizenship"
+        "Advises the President (of the United States)"
       ],
       "senior": false
     },
@@ -509,9 +504,7 @@
       "number": 52,
       "question": "What is the highest court in the United States? *",
       "answers": [
-        "Supreme Court",
-        "8 of 19",
-        "uscis.gov/citizenship"
+        "Supreme Court"
       ],
       "senior": true
     },
@@ -553,7 +546,9 @@
     "57": {
       "number": 57,
       "question": "Who is the Chief Justice of the United States now?",
-      "answers": [],
+      "answers": [
+        "John G. Roberts, Jr."
+      ],
       "senior": false
     },
     "58": {
@@ -603,8 +598,6 @@
       "answers": [
         "Answers will vary. [District of Columbia residents should answer that D.C. is not a state and does not have a",
         "capital. Residents of U.S. territories should name the capital of the territory.]",
-        "9 of 19",
-        "uscis.gov/citizenship",
         "C: Rights and Responsibilities"
       ],
       "senior": false
@@ -671,9 +664,7 @@
       "answers": [
         "Be born in the United States, under the conditions set by the 14th Amendment",
         "Naturalize",
-        "Derive citizenship (under conditions set by Congress)",
-        "10 of 19",
-        "uscis.gov/citizenship"
+        "Derive citizenship (under conditions set by Congress)"
       ],
       "senior": false
     },
@@ -725,8 +716,6 @@
         "Required by law",
         "Civic duty",
         "Makes the draft fair, if needed",
-        "11 of 19",
-        "uscis.gov/citizenship",
         "AMERICAN HISTORY",
         "A: Colonial Period and Independence"
       ],
@@ -801,9 +790,7 @@
       "number": 79,
       "question": "When was the Declaration of Independence adopted?",
       "answers": [
-        "July 4, 1776",
-        "12 of 19",
-        "uscis.gov/citizenship"
+        "July 4, 1776"
       ],
       "senior": false
     },
@@ -876,9 +863,7 @@
         "First Postmaster General of the United States",
         "Helped write the Declaration of Independence",
         "Inventor",
-        "U.S. diplomat",
-        "13 of 19",
-        "uscis.gov/citizenship"
+        "U.S. diplomat"
       ],
       "senior": false
     },
@@ -954,9 +939,7 @@
       "number": 92,
       "question": "Name the U.S. war between the North and the South.",
       "answers": [
-        "The Civil War",
-        "14 of 19",
-        "uscis.gov/citizenship"
+        "The Civil War"
       ],
       "senior": false
     },
@@ -1036,8 +1019,6 @@
         "Harriet Tubman",
         "Lucretia Mott",
         "Lucy Stone",
-        "15 of 19",
-        "uscis.gov/citizenship",
         "C: Recent American History and Other Important Historical Information"
       ],
       "senior": false
@@ -1117,9 +1098,7 @@
         "General during World War II",
         "President at the end of (during) the Korean War",
         "34th president of the United States",
-        "Signed the Federal-Aid Highway Act of 1956 (Created the Interstate System)",
-        "16 of 19",
-        "uscis.gov/citizenship"
+        "Signed the Federal-Aid Highway Act of 1956 (Created the Interstate System)"
       ],
       "senior": false
     },
@@ -1202,9 +1181,7 @@
       "answers": [
         "(Global) War on Terror",
         "War in Afghanistan",
-        "War in Iraq",
-        "17 of 19",
-        "uscis.gov/citizenship"
+        "War in Iraq"
       ],
       "senior": false
     },
@@ -1252,8 +1229,6 @@
         "Assembly line",
         "Landing on the moon",
         "Integrated circuit (IC)",
-        "18 of 19",
-        "uscis.gov/citizenship",
         "SYMBOLS AND HOLIDAYS",
         "A: Symbols"
       ],
@@ -1309,8 +1284,6 @@
       "answers": [
         "Out of many, one",
         "We all become one",
-        "19 of 19",
-        "uscis.gov/citizenship",
         "B: Holidays"
       ],
       "senior": false
@@ -1383,284 +1356,13 @@
     126
   ],
   "executive": {
-    "president": [
-      "Donald J. Trump",
-      "Donald Trump",
-      "Trump",
-      "JD Vance",
-      "Vance",
-      "nine (9)"
-    ],
-    "vice_president": [
-      "JD Vance",
-      "Vance",
-      "nine (9)",
-      "John Roberts",
-      "John G. Roberts, Jr"
-    ],
-    "speaker_of_the_house": [
-      "Mike Johnson",
-      "Johnson",
-      "James Michael Johnson (birth name)"
-    ],
-    "chief_justice": [
-      "John Roberts",
-      "John G. Roberts, Jr"
-    ],
+    "president": "Donald J. Trump",
+    "vice_president": "JD Vance",
+    "speaker_of_the_house": "Mike Johnson",
+    "chief_justice": "John G. Roberts, Jr.",
     "source": "https://www.uscis.gov/citizenship/testupdates"
   },
-  "governors": [
-    {
-      "state": "AK",
-      "name": "List of governors of Alaska",
-      "state_name": "Alaska"
-    },
-    {
-      "state": "AL",
-      "name": "List of governors of Alabama",
-      "state_name": "Alabama"
-    },
-    {
-      "state": "AR",
-      "name": "List of governors of Arkansas",
-      "state_name": "Arkansas"
-    },
-    {
-      "state": "AZ",
-      "name": "List of governors of Arizona",
-      "state_name": "Arizona"
-    },
-    {
-      "state": "CA",
-      "name": "List of governors of California",
-      "state_name": "California"
-    },
-    {
-      "state": "CO",
-      "name": "Governor of Colorado",
-      "state_name": "Colorado"
-    },
-    {
-      "state": "CT",
-      "name": "List of governors of Connecticut",
-      "state_name": "Connecticut"
-    },
-    {
-      "state": "DE",
-      "name": "List of governors of Delaware",
-      "state_name": "Delaware"
-    },
-    {
-      "state": "FL",
-      "name": "List of governors of Florida",
-      "state_name": "Florida"
-    },
-    {
-      "state": "GA",
-      "name": "List of governors of Georgia",
-      "state_name": "Georgia"
-    },
-    {
-      "state": "HI",
-      "name": "List of governors of Hawaii",
-      "state_name": "Hawaii"
-    },
-    {
-      "state": "IA",
-      "name": "List of governors of Iowa",
-      "state_name": "Iowa"
-    },
-    {
-      "state": "ID",
-      "name": "List of governors of Idaho",
-      "state_name": "Idaho"
-    },
-    {
-      "state": "IL",
-      "name": "List of governors of Illinois",
-      "state_name": "Illinois"
-    },
-    {
-      "state": "IN",
-      "name": "List of governors of Indiana",
-      "state_name": "Indiana"
-    },
-    {
-      "state": "KS",
-      "name": "List of governors of Kansas",
-      "state_name": "Kansas"
-    },
-    {
-      "state": "KY",
-      "name": "List of governors of Kentucky",
-      "state_name": "Kentucky"
-    },
-    {
-      "state": "LA",
-      "name": "List of governors of Louisiana",
-      "state_name": "Louisiana"
-    },
-    {
-      "state": "MA",
-      "name": "List of governors of Massachusetts",
-      "state_name": "Massachusetts"
-    },
-    {
-      "state": "MD",
-      "name": "List of governors of Maryland",
-      "state_name": "Maryland"
-    },
-    {
-      "state": "ME",
-      "name": "List of governors of Maine",
-      "state_name": "Maine"
-    },
-    {
-      "state": "MI",
-      "name": "List of governors of Michigan",
-      "state_name": "Michigan"
-    },
-    {
-      "state": "MN",
-      "name": "List of governors of Minnesota",
-      "state_name": "Minnesota"
-    },
-    {
-      "state": "MO",
-      "name": "List of governors of Missouri",
-      "state_name": "Missouri"
-    },
-    {
-      "state": "MS",
-      "name": "List of governors of Mississippi",
-      "state_name": "Mississippi"
-    },
-    {
-      "state": "MT",
-      "name": "List of governors of Montana",
-      "state_name": "Montana"
-    },
-    {
-      "state": "NC",
-      "name": "List of governors of North Carolina",
-      "state_name": "North Carolina"
-    },
-    {
-      "state": "ND",
-      "name": "List of governors of North Dakota",
-      "state_name": "North Dakota"
-    },
-    {
-      "state": "NE",
-      "name": "List of governors of Nebraska",
-      "state_name": "Nebraska"
-    },
-    {
-      "state": "NH",
-      "name": "List of governors of New Hampshire",
-      "state_name": "New Hampshire"
-    },
-    {
-      "state": "NJ",
-      "name": "List of governors of New Jersey",
-      "state_name": "New Jersey"
-    },
-    {
-      "state": "NM",
-      "name": "List of governors of New Mexico",
-      "state_name": "New Mexico"
-    },
-    {
-      "state": "NV",
-      "name": "List of governors of Nevada",
-      "state_name": "Nevada"
-    },
-    {
-      "state": "NY",
-      "name": "List of governors of New York",
-      "state_name": "New York"
-    },
-    {
-      "state": "OH",
-      "name": "List of governors of Ohio",
-      "state_name": "Ohio"
-    },
-    {
-      "state": "OK",
-      "name": "List of governors of Oklahoma",
-      "state_name": "Oklahoma"
-    },
-    {
-      "state": "OR",
-      "name": "List of governors of Oregon",
-      "state_name": "Oregon"
-    },
-    {
-      "state": "PA",
-      "name": "List of governors of Pennsylvania",
-      "state_name": "Pennsylvania"
-    },
-    {
-      "state": "RI",
-      "name": "List of governors of Rhode Island",
-      "state_name": "Rhode Island"
-    },
-    {
-      "state": "SC",
-      "name": "Attorney General of South Carolina",
-      "state_name": "South Carolina"
-    },
-    {
-      "state": "SD",
-      "name": "List of governors of South Dakota",
-      "state_name": "South Dakota"
-    },
-    {
-      "state": "TN",
-      "name": "List of governors of Tennessee",
-      "state_name": "Tennessee"
-    },
-    {
-      "state": "TX",
-      "name": "List of governors of Texas",
-      "state_name": "Texas"
-    },
-    {
-      "state": "UT",
-      "name": "List of governors of Utah",
-      "state_name": "Utah"
-    },
-    {
-      "state": "VA",
-      "name": "List of governors of Virginia",
-      "state_name": "Virginia"
-    },
-    {
-      "state": "VT",
-      "name": "List of governors of Vermont",
-      "state_name": "Vermont"
-    },
-    {
-      "state": "WA",
-      "name": "List of governors of Washington",
-      "state_name": "Washington"
-    },
-    {
-      "state": "WI",
-      "name": "List of governors of Wisconsin",
-      "state_name": "Wisconsin"
-    },
-    {
-      "state": "WV",
-      "name": "List of governors of West Virginia",
-      "state_name": "West Virginia"
-    },
-    {
-      "state": "WY",
-      "name": "List of governors of Wyoming",
-      "state_name": "Wyoming"
-    }
-  ],
+  "governors": null,
   "senators": [
     {
       "name": "Dan Sullivan",
