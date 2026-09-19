@@ -6,7 +6,10 @@ from monitor import (
     find_changes,
     maybe_simulate,
     parse_questions,
+    parse_governors_wikitext,
     _names_for_heading,
+    _looks_like_person_name,
+    STATE_NAMES,
 )
 
 
@@ -167,6 +170,65 @@ class ParseTests(unittest.TestCase):
         self.assertEqual(parsed["38"]["answers"], ["Donald J. Trump"])
         self.assertEqual(parsed["39"]["answers"], ["JD Vance"])
         self.assertEqual(parsed["57"]["answers"], ["John G. Roberts, Jr."])
+
+
+GOVERNORS_WIKITEXT = r"""
+==State governors==
+{| class="wikitable"
+|-
+! State
+! Image
+! Governor
+|-
+|[[Governor of Alabama|Alabama]] ([[List of governors of Alabama|list]])
+|[[File:Kay Ivey (2026).jpg|alt=Photographic portrait of Kay Ivey]]
+! scope="row" | {{sortname|Kay|Ivey|Kay Ivey}}
+|[[Alabama Republican Party|Republican]]
+|-
+|[[Governor of Indiana|Indiana]] ([[List of governors of Indiana|list]])
+|[[File:Governor Mike Braun DHS.jpg]]
+! scope="row" | {{sortname|Mike|Braun}}
+|[[Indiana Republican Party|Republican]]
+|-
+|[[Governor of Louisiana|Louisiana]] ([[List of governors of Louisiana|list]])
+|[[File:Jeff Landry in 2025.jpg]]
+! scope="row" | [[Jeff Landry]]
+|[[Republican Party of Louisiana|Republican]]
+|-
+|[[Governor of New Hampshire|New Hampshire]] ([[List of governors of New Hampshire|list]])
+|[[File:Kelly Ayotte.jpg]]
+! scope="row" | {{sortname|Kelly|Ayotte}}
+|[[New Hampshire Republican State Committee|Republican]]
+|-
+|[[Governor of New Mexico|New Mexico]] ([[List of governors of New Mexico|list]])
+! scope="row" | {{sortname|Michelle|Lujan Grisham}}
+|}
+==Territory governors==
+{|
+|[[Governor of Guam|Guam]]
+! scope="row" | {{sortname|Lou Leon|Guerrero}}
+|}
+"""
+
+
+class GovernorParseTests(unittest.TestCase):
+    def test_wikitext_uses_person_names_not_page_titles(self):
+        rows = {r["state"]: r["name"] for r in parse_governors_wikitext(GOVERNORS_WIKITEXT)}
+        self.assertEqual(rows["AL"], "Kay Ivey")
+        self.assertEqual(rows["IN"], "Mike Braun")
+        self.assertEqual(rows["LA"], "Jeff Landry")
+        self.assertEqual(rows["NH"], "Kelly Ayotte")
+        self.assertEqual(rows["NM"], "Michelle Lujan Grisham")
+        self.assertNotIn("GU", rows)
+        for name in rows.values():
+            self.assertTrue(_looks_like_person_name(name))
+            self.assertFalse(name.lower().startswith("governor of"))
+            self.assertFalse(name.lower().startswith("list of"))
+
+    def test_office_title_is_not_treated_as_a_person(self):
+        self.assertFalse(_looks_like_person_name("Governor of Alabama"))
+        self.assertFalse(_looks_like_person_name("List of governors of Alabama"))
+        self.assertEqual(len(STATE_NAMES), 50)
 
 
 if __name__ == "__main__":
