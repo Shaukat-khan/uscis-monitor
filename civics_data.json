@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T00:33:09Z",
+  "generated_at": "2026-09-19T00:39:12Z",
   "sources": {
     "civics_pdf": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
     "civics_pdf_sha256": "f280608c0fb6dc1eba344b4746a7ba52d02fe411fba30cedd4371819f0abe11c",
@@ -1362,7 +1362,258 @@
     "chief_justice": "John G. Roberts, Jr.",
     "source": "https://www.uscis.gov/citizenship/testupdates"
   },
-  "governors": null,
+  "governors": [
+    {
+      "state": "AK",
+      "name": "Mike Dunleavy",
+      "state_name": "Alaska"
+    },
+    {
+      "state": "AL",
+      "name": "Kay Ivey",
+      "state_name": "Alabama"
+    },
+    {
+      "state": "AR",
+      "name": "Sarah Huckabee Sanders",
+      "state_name": "Arkansas"
+    },
+    {
+      "state": "AZ",
+      "name": "Katie Hobbs",
+      "state_name": "Arizona"
+    },
+    {
+      "state": "CA",
+      "name": "Gavin Newsom",
+      "state_name": "California"
+    },
+    {
+      "state": "CO",
+      "name": "Jared Polis",
+      "state_name": "Colorado"
+    },
+    {
+      "state": "CT",
+      "name": "Ned Lamont",
+      "state_name": "Connecticut"
+    },
+    {
+      "state": "DE",
+      "name": "Matt Meyer",
+      "state_name": "Delaware"
+    },
+    {
+      "state": "FL",
+      "name": "Ron DeSantis",
+      "state_name": "Florida"
+    },
+    {
+      "state": "GA",
+      "name": "Brian Kemp",
+      "state_name": "Georgia"
+    },
+    {
+      "state": "HI",
+      "name": "Josh Green",
+      "state_name": "Hawaii"
+    },
+    {
+      "state": "IA",
+      "name": "Kim Reynolds",
+      "state_name": "Iowa"
+    },
+    {
+      "state": "ID",
+      "name": "Brad Little",
+      "state_name": "Idaho"
+    },
+    {
+      "state": "IL",
+      "name": "JB Pritzker",
+      "state_name": "Illinois"
+    },
+    {
+      "state": "IN",
+      "name": "Mike Braun",
+      "state_name": "Indiana"
+    },
+    {
+      "state": "KS",
+      "name": "Laura Kelly",
+      "state_name": "Kansas"
+    },
+    {
+      "state": "KY",
+      "name": "Andy Beshear",
+      "state_name": "Kentucky"
+    },
+    {
+      "state": "LA",
+      "name": "Jeff Landry",
+      "state_name": "Louisiana"
+    },
+    {
+      "state": "MA",
+      "name": "Maura Healey",
+      "state_name": "Massachusetts"
+    },
+    {
+      "state": "MD",
+      "name": "Wes Moore",
+      "state_name": "Maryland"
+    },
+    {
+      "state": "ME",
+      "name": "Janet Mills",
+      "state_name": "Maine"
+    },
+    {
+      "state": "MI",
+      "name": "Gretchen Whitmer",
+      "state_name": "Michigan"
+    },
+    {
+      "state": "MN",
+      "name": "Tim Walz",
+      "state_name": "Minnesota"
+    },
+    {
+      "state": "MO",
+      "name": "Mike Kehoe",
+      "state_name": "Missouri"
+    },
+    {
+      "state": "MS",
+      "name": "Tate Reeves",
+      "state_name": "Mississippi"
+    },
+    {
+      "state": "MT",
+      "name": "Greg Gianforte",
+      "state_name": "Montana"
+    },
+    {
+      "state": "NC",
+      "name": "Josh Stein",
+      "state_name": "North Carolina"
+    },
+    {
+      "state": "ND",
+      "name": "Kelly Armstrong",
+      "state_name": "North Dakota"
+    },
+    {
+      "state": "NE",
+      "name": "Jim Pillen",
+      "state_name": "Nebraska"
+    },
+    {
+      "state": "NH",
+      "name": "Kelly Ayotte",
+      "state_name": "New Hampshire"
+    },
+    {
+      "state": "NJ",
+      "name": "Mikie Sherrill",
+      "state_name": "New Jersey"
+    },
+    {
+      "state": "NM",
+      "name": "Michelle Lujan Grisham",
+      "state_name": "New Mexico"
+    },
+    {
+      "state": "NV",
+      "name": "Joe Lombardo",
+      "state_name": "Nevada"
+    },
+    {
+      "state": "NY",
+      "name": "Kathy Hochul",
+      "state_name": "New York"
+    },
+    {
+      "state": "OH",
+      "name": "Mike DeWine",
+      "state_name": "Ohio"
+    },
+    {
+      "state": "OK",
+      "name": "Kevin Stitt",
+      "state_name": "Oklahoma"
+    },
+    {
+      "state": "OR",
+      "name": "Tina Kotek",
+      "state_name": "Oregon"
+    },
+    {
+      "state": "PA",
+      "name": "Josh Shapiro",
+      "state_name": "Pennsylvania"
+    },
+    {
+      "state": "RI",
+      "name": "Dan McKee",
+      "state_name": "Rhode Island"
+    },
+    {
+      "state": "SC",
+      "name": "Henry McMaster",
+      "state_name": "South Carolina"
+    },
+    {
+      "state": "SD",
+      "name": "Larry Rhoden",
+      "state_name": "South Dakota"
+    },
+    {
+      "state": "TN",
+      "name": "Bill Lee",
+      "state_name": "Tennessee"
+    },
+    {
+      "state": "TX",
+      "name": "Greg Abbott",
+      "state_name": "Texas"
+    },
+    {
+      "state": "UT",
+      "name": "Spencer Cox",
+      "state_name": "Utah"
+    },
+    {
+      "state": "VA",
+      "name": "Abigail Spanberger",
+      "state_name": "Virginia"
+    },
+    {
+      "state": "VT",
+      "name": "Phil Scott",
+      "state_name": "Vermont"
+    },
+    {
+      "state": "WA",
+      "name": "Bob Ferguson",
+      "state_name": "Washington"
+    },
+    {
+      "state": "WI",
+      "name": "Tony Evers",
+      "state_name": "Wisconsin"
+    },
+    {
+      "state": "WV",
+      "name": "Patrick Morrisey",
+      "state_name": "West Virginia"
+    },
+    {
+      "state": "WY",
+      "name": "Mark Gordon",
+      "state_name": "Wyoming"
+    }
+  ],
   "senators": [
     {
       "name": "Dan Sullivan",
