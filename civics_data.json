@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T18:59:32Z",
+  "generated_at": "2026-09-28T20:19:52Z",
   "sources": {
     "civics_pdf": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
     "civics_pdf_sha256": "f280608c0fb6dc1eba344b4746a7ba52d02fe411fba30cedd4371819f0abe11c",
@@ -2475,7 +2475,7 @@
       "name": "James Gallagher",
       "state": "CA",
       "party": "Republican",
-      "url": null,
+      "url": "https://gallagher.house.gov/",
       "district": "1"
     },
     {
@@ -2510,7 +2510,7 @@
       "name": "Aisha Wahab",
       "state": "CA",
       "party": "Democrat",
-      "url": null,
+      "url": "https://wahab.house.gov/",
       "district": "14"
     },
     {
@@ -3161,7 +3161,7 @@
       "name": "Everton Blair Jr.",
       "state": "GA",
       "party": "Democrat",
-      "url": null,
+      "url": "https://blair.house.gov/",
       "district": "13"
     },
     {
