@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T22:32:13Z",
+  "generated_at": "2026-11-09T23:13:54Z",
   "sources": {
     "civics_pdf": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
     "civics_pdf_sha256": "f280608c0fb6dc1eba344b4746a7ba52d02fe411fba30cedd4371819f0abe11c",
@@ -1728,13 +1728,6 @@
       "class": 1
     },
     {
-      "name": "Ashley Moody",
-      "state": "FL",
-      "party": "Republican",
-      "url": "https://www.moody.senate.gov",
-      "class": 3
-    },
-    {
       "name": "Rick Scott",
       "state": "FL",
       "party": "Republican",
@@ -2097,13 +2090,6 @@
       "party": "Republican",
       "url": "https://www.moreno.senate.gov",
       "class": 1
-    },
-    {
-      "name": "Jon Husted",
-      "state": "OH",
-      "party": "Republican",
-      "url": "https://www.husted.senate.gov",
-      "class": 3
     },
     {
       "name": "Alan Armstrong",
